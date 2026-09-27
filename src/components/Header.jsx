@@ -68,6 +68,9 @@ function Header() {
             Bolsas
           </NavLink>
 
+<NavLink to="/universidades" onClick={() => setMenuOpen(false)}>
+  Universidades
+</NavLink>
           <NavLink to="/sobre" onClick={() => setMenuOpen(false)}>
             Sobre
           </NavLink>
@@ -94,6 +97,7 @@ function Header() {
       )}
 
     </header>
+   
   )
 }
 

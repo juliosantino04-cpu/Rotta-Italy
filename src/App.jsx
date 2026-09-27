@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Home from "./pages/Home"
 import Mentoria from "./pages/Mentoria"
 import Bolsas from "./pages/Bolsas"
+import Universidades from "./pages/Universidades"
 import Sobre from "./pages/Sobre"
 import Blog from "./pages/Blog"
 import FAQ from "./pages/FAQ"
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/mentoria" element={<Mentoria />} />
         <Route path="/bolsas" element={<Bolsas />} />
+        <Route path="/universidades" element={<Universidades />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/faq" element={<FAQ />} />
