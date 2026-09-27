@@ -1782,3 +1782,64 @@ picture {
   width: 100%;
   display: block;
 }
+@media (max-width: 768px) {
+
+  .header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px 18px;
+    gap: 12px;
+  }
+
+  .header-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .menu-button {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo img {
+    width: 105px;
+    height: auto;
+    display: block;
+  }
+
+  .header-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .options-button,
+  .student-access {
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .options-button {
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+
+  .student-access {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+}
