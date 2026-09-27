@@ -1773,3 +1773,12 @@ nav a.active {
   }
 
 }
+picture {
+  display: block;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+}

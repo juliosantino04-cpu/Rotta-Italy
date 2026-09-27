@@ -5,11 +5,15 @@ function Home() {
   return (
     <main>
 
-      <img
-        src={banner}
-        alt="Rotta Italy"
-        className="hero-image"
-      />
+      <picture>
+  <source media="(max-width: 768px)" srcSet="/bannersite.mob.png" />
+
+  <img
+    src={banner}
+    alt="Rotta Italy"
+    className="hero-image"
+  />
+</picture>
 
       <section className="intro-section">
 
