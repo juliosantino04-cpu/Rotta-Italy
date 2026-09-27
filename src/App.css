@@ -1,0 +1,304 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 5%;
+  background-color: #F4F0E7;
+}
+
+header h1 {
+  margin: 0;
+}
+main h1 {
+  font-family: "League Spartan", sans-serif;
+  color: #062b56;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+section {
+  padding: 60px 40px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section > div {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+section article {
+  flex: 1;
+  max-width: 350px;
+}
+
+section article img {
+  width: 100%;
+  display: block;
+}
+
+section article h3 {
+  margin-top: 20px;
+}
+
+section article p {
+  line-height: 1.5;
+}
+body {
+  background-color: #F4F0E7;
+  margin: 0;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+nav a {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #062b56;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: #B83A3A;
+}
+nav a.active {
+  color: #B83A3A;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BOTÃO DOS TRÊS TRAÇOS */
+
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #062b56;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* MENU */
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #f4f0e7;
+  border: 1px solid #062b56;
+  border-radius: 6px;
+  padding: 10px;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.menu-dropdown a {
+  display: block;
+  color: #062b56;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu-dropdown a:hover {
+  background-color: #062b56;
+  color: #f4f0e7;
+}
+
+/* ABRE O MENU AO PASSAR O MOUSE */
+
+.menu-container:hover .menu-dropdown {
+  display: block;
+}
+
+/* BOTÃO ÁREA DO ALUNO */
+
+.options-button,
+.student-access {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #062b56;
+  background-color: #f4f0e7;
+
+  border: 1px solid #062b56;
+  border-radius: 6px;
+
+  padding: 8px 14px;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.options-button:hover,
+.student-access:hover {
+  background-color: #062b56;
+  color: #f4f0e7;
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100vh;
+
+  background-color: #f4f0e7;
+
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+
+  z-index: 2000;
+
+  transition: left 0.3s ease;
+
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+
+  font-size: 32px;
+  color: #062b56;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+.side-menu-links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin-top: 70px;
+}
+
+.side-menu-links a {
+  color: #062b56;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 14px 10px;
+  border-radius: 6px;
+}
+
+.side-menu-links a:hover {
+  background-color: #062b56;
+  color: #f4f0e7;
+}
+
+.side-menu-links a.active {
+  background-color: #062b56;
+  color: #f4f0e7;
+}
+
+/* FUNDO ATRÁS DO MENU */
+
+.menu-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(18, 59, 93, 0.25);
+
+  z-index: 1500;
+}
+.hero-image {
+  width: 100%;
+  display: block;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 85%,
+    rgba(0, 0, 0, 0.85) 93%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    black 85%,
+    rgba(0, 0, 0, 0.85) 93%,
+    transparent 100%
+  );
+}
+body {
+  margin: 0;
+  background-color: #f4f0e7;
+  color: #062b56;
+}
