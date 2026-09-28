@@ -1,5 +1,6 @@
 import Products from "../components/Products"
 import banner from "../assets/capa site comp.png"
+import { NavLink } from "react-router-dom"
 
 function Home() {
   return (
@@ -122,9 +123,9 @@ function Home() {
         como funciona o processo para estudar na Itália.
       </p>
 
-      <a href="/bolsas">
-        Conhecer bolsas →
-      </a>
+      <NavLink to="/bolsas">
+  Conhecer bolsas →
+</NavLink>
     </div>
 
     <div className="service-card">
@@ -139,9 +140,9 @@ function Home() {
         opções que combinam com seus objetivos.
       </p>
 
-      <a href="/universidades">
-        Explorar universidades →
-      </a>
+      <NavLink to="/universidades">
+  Explorar universidades →
+</NavLink>
     </div>
 
     <div className="service-card">
@@ -156,9 +157,9 @@ function Home() {
         aplicação e seguir sua jornada com mais segurança.
       </p>
 
-      <a href="/mentoria">
-        Conhecer a mentoria →
-      </a>
+      <NavLink to="/mentoria">
+  Conhecer a mentoria →
+</NavLink>
     </div>
 
   </div>
@@ -261,11 +262,11 @@ function Home() {
     </p>
 
     <a
-      href="/mentoria"
-      className="mid-cta-button"
-    >
-      Conhecer a mentoria →
-    </a>
+  href="/mentoria"
+  className="mid-cta-button"
+>
+  Conhecer a mentoria →
+</a>
 
   </div>
 

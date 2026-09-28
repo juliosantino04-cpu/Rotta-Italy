@@ -1843,3 +1843,591 @@ picture {
   }
 
 }
+/* =========================
+   MENTORIA
+========================= */
+
+.mentoria-page {
+  width: 100%;
+}
+
+/* HERO */
+
+.mentoria-hero {
+  padding: 0 0 110px;
+  background-color: #f4f0e7;
+  box-sizing: border-box;
+}
+
+.mentoria-hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 80px 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.mentoria-hero-content .mentoria-label {
+  display: block;
+  margin-bottom: 20px;
+  color: #b83a3a;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.mentoria-hero-content h1 {
+  max-width: 850px;
+  margin: 0 0 25px;
+  color: #062b56;
+  font-family: "League Spartan", sans-serif;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -1px;
+}
+
+.mentoria-hero-content p {
+  max-width: 620px;
+  margin: 0 0 35px;
+  color: #062b56;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.mentoria-hero-content a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background-color: #062b56;
+  color: #f4f0e7;
+  border: 1px solid #062b56;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.mentoria-banner {
+  position: relative;
+  width: 100vw;
+  height: 450px;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  background-color: #f4f0e7;
+}
+
+.mentoria-banner-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mentoria-banner-gradient {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 220px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(244, 240, 231, 0.25) 30%,
+    rgba(244, 240, 231, 0.75) 70%,
+    #f4f0e7 100%
+  );
+  pointer-events: none;
+}
+.mentoria-cards {
+  width: 100%;
+  padding: 0 18px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.mentoria-card-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 18px;
+
+  opacity: 0;
+  transform: translateX(-100px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.mentoria-card-row.row-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mentoria-card {
+  min-width: 0;
+  min-height: 235px;
+  padding: 28px;
+
+  background-color: #062b56;
+  color: #f4f0e7;
+
+  border: 1px solid rgba(244, 240, 231, 0.12);
+  border-radius: 6px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  opacity: 0;
+  transform: translateX(-80px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease,
+    box-shadow 0.3s ease;
+}
+
+.mentoria-card.card-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mentoria-card:hover {
+  box-shadow: 0 18px 35px rgba(6, 43, 86, 0.18);
+}
+
+.mentoria-card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  margin-bottom: 25px;
+
+  color: #b83a3a;
+
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+
+  border: 1px solid rgba(184, 58, 58, 0.5);
+  border-radius: 50%;
+}
+
+.mentoria-card h3 {
+  margin: 0 0 14px;
+
+  color: #f4f0e7;
+
+  font-family: "League Spartan", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.mentoria-card p {
+  margin: 0;
+
+  color: rgba(244, 240, 231, 0.78);
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.mentoria-card-bonus {
+  background-color: #b83a3a;
+}
+
+.mentoria-card-bonus span {
+  color: #f4f0e7;
+  border-color: rgba(244, 240, 231, 0.5);
+}
+@media (max-width: 900px) {
+
+  .mentoria-card-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .mentoria-card-row {
+    grid-template-columns: 1fr;
+  }
+}
+.mentoria-about {
+  width: 100%;
+  padding: 100px 25px;
+  background-color: #f4f0e7;
+  box-sizing: border-box;
+}
+
+.mentoria-about-card {
+  max-width: 1050px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  padding: 28px;
+
+  background-color: #062b56;
+  border-radius: 10px;
+
+  box-shadow: 0 20px 50px rgba(6, 43, 86, 0.10);
+
+  box-sizing: border-box;
+}
+
+.mentoria-about-photo {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.mentoria-about-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+}
+
+.mentoria-about-content {
+  max-width: 570px;
+  margin: 0;
+  padding: 0;
+}
+
+.mentoria-about-content h2 {
+  margin: 0 0 20px;
+  color: #f4f0e7;
+  font-family: "League Spartan", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.5px;
+}
+
+.mentoria-about-content p {
+  margin: 0;
+
+  color: #f4f0e7;
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+@media (max-width: 768px) {
+
+  .mentoria-about {
+    padding: 70px 18px;
+  }
+
+  .mentoria-about-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .mentoria-about-photo {
+    width: 100%;
+    height: 280px;
+  }
+
+  .mentoria-about-content h2 {
+    font-size: 38px;
+  }
+
+}
+.mentoria-cta {
+  width: 100%;
+  padding: 130px 25px;
+  background-color: #062b56;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.mentoria-cta-content {
+  max-width: 850px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mentoria-cta-content > span {
+  display: block;
+  margin-bottom: 22px;
+
+  color: #b83a3a;
+
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.mentoria-cta-content h2 {
+  max-width: 760px;
+  margin: 0 auto 25px;
+
+  color: #f4f0e7;
+
+  font-family: "League Spartan", sans-serif;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -1px;
+}
+
+.mentoria-cta-content p {
+  max-width: 650px;
+  margin: 0 auto 38px;
+
+  color: rgba(244, 240, 231, 0.78);
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.mentoria-cta-content a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 28px;
+
+  background-color: #b83a3a;
+  color: #f4f0e7;
+
+  border: 1px solid #b83a3a;
+  border-radius: 6px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.mentoria-cta-content a:hover {
+  background-color: #f4f0e7;
+  color: #062b56;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mentoria-cta-content small {
+  display: block;
+  margin-top: 18px;
+
+  color: rgba(244, 240, 231, 0.5);
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+.mentoria-footer {
+  width: 100%;
+  background-color: #f4f0e7;
+  border-top: 1px solid rgba(6, 43, 86, 0.10);
+  box-sizing: border-box;
+}
+
+.mentoria-footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 25px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.mentoria-footer-brand {
+  max-width: 300px;
+}
+
+.mentoria-footer-brand img {
+  width: 145px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mentoria-footer-brand p {
+  margin: 0;
+  color: #062b56;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.mentoria-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px 28px;
+  max-width: 500px;
+}
+
+.mentoria-footer-links a {
+  color: #062b56;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mentoria-footer-links a:hover {
+  color: #b83a3a;
+}
+
+.mentoria-footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px 25px;
+
+  border-top: 1px solid rgba(6, 43, 86, 0.10);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  color: rgba(6, 43, 86, 0.55);
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+
+  .mentoria-footer-content {
+    padding: 50px 20px 40px;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .mentoria-footer-links {
+    justify-content: flex-start;
+  }
+
+  .mentoria-footer-bottom {
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+}
+.mentoria-footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.mentoria-footer-social > span {
+  color: #b83a3a;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.mentoria-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mentoria-social-links a {
+  color: #062b56;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mentoria-social-links a:hover {
+  color: #b83a3a;
+}
+
+@media (max-width: 700px) {
+
+  .mentoria-footer-social {
+    width: 100%;
+  }
+
+  .mentoria-social-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+  }
+
+}
+.mentoria-footer-description {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 8px;
+}
+
+.mentoria-footer-description p {
+  margin: 0;
+  color: #062b56;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+
+  .mentoria-footer-description {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+}
