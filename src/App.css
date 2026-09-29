@@ -2478,3 +2478,930 @@ picture {
   }
 
 }
+/* =========================
+   PÁGINA SOBRE
+========================= */
+
+.sobre-page {
+  width: 100%;
+  background: #f5f3ef;
+}
+
+.sobre-hero {
+  width: 100%;
+}
+
+/* BANNER INTEIRO */
+
+.sobre-banner {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.sobre-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* DEGRADÊ ENTRE BANNER E BACKGROUND */
+
+.sobre-banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 140px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 243, 239, 0) 0%,
+    rgba(245, 243, 239, 0.35) 45%,
+    #f5f3ef 100%
+  );
+
+  pointer-events: none;
+}
+
+/* TEXTO */
+
+.sobre-hero-content {
+  width: min(1100px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  padding: 45px 0 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sobre-hero-tag {
+  margin-bottom: 16px;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.sobre-hero h1 {
+  margin: 0 0 20px;
+
+  font-size: clamp(48px, 6vw, 80px);
+  line-height: 1;
+}
+
+.sobre-hero p {
+  max-width: 520px;
+
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .sobre-banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sobre-banner::after {
+    height: 100px;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(245, 243, 239, 0) 0%,
+      rgba(245, 243, 239, 0.4) 45%,
+      #f5f3ef 100%
+    );
+  }
+
+  .sobre-hero-content {
+    width: calc(100% - 40px);
+
+    padding: 35px 0 70px;
+  }
+
+  .sobre-hero-tag {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .sobre-hero h1 {
+    font-size: clamp(42px, 12vw, 58px);
+    line-height: 1;
+  }
+
+  .sobre-hero p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+/* ========================================
+   HISTÓRIA
+======================================== */
+
+.sobre-historia {
+  width: min(1200px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  padding: 40px 0 140px;
+}
+
+
+/* TÍTULO GRANDE */
+
+.sobre-historia-titulo {
+  margin: 0 0 55px;
+
+  font-size: clamp(48px, 5.5vw, 76px);
+
+  line-height: 0.98;
+
+  font-weight: 500;
+
+  letter-spacing: -2px;
+
+  text-align: left;
+}
+
+
+/* GRID */
+
+.sobre-historia-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+/* ========================================
+   FOTOS
+======================================== */
+
+.sobre-historia-fotos {
+  position: relative;
+
+  width: 100%;
+
+  height: 620px;
+}
+
+
+.foto-card {
+  position: absolute;
+
+  width: 280px;
+
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+
+  background: #ddd;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+.foto-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+.foto-card-1 {
+  top: 30px;
+  left: 20px;
+
+  transform: rotate(-4deg);
+
+  z-index: 1;
+}
+
+
+.foto-card-2 {
+  top: 170px;
+  right: 10px;
+
+  transform: rotate(5deg);
+
+  z-index: 2;
+}
+
+
+.foto-card-3 {
+  bottom: 20px;
+  left: 100px;
+
+  transform: rotate(-2deg);
+
+  z-index: 3;
+}
+
+
+/* HOVER */
+
+.foto-card-1:hover {
+  transform: rotate(-4deg) translateY(-10px);
+
+  box-shadow:
+    0 30px 55px rgba(0, 0, 0, 0.18);
+}
+
+
+.foto-card-2:hover {
+  transform: rotate(5deg) translateY(-10px);
+
+  box-shadow:
+    0 30px 55px rgba(0, 0, 0, 0.18);
+}
+
+
+.foto-card-3:hover {
+  transform: rotate(-2deg) translateY(-10px);
+
+  box-shadow:
+    0 30px 55px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========================================
+   CARD DA HISTÓRIA
+======================================== */
+
+.sobre-historia-card {
+  background: #ffffff;
+
+  padding: 55px 50px;
+
+  border-radius: 6px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.08);
+
+  transform: rotate(1.2deg);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+.sobre-historia-card:hover {
+  transform: rotate(0deg) translateY(-8px);
+
+  box-shadow:
+    0 35px 70px rgba(0, 0, 0, 0.12);
+}
+
+
+.sobre-historia-conteudo {
+  max-width: 540px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  transform: rotate(-1.2deg);
+}
+
+
+/* NOME */
+
+.sobre-historia-conteudo h3 {
+  margin: 0 0 30px;
+
+  font-size: clamp(28px, 3vw, 42px);
+
+  line-height: 1.05;
+
+  font-weight: 500;
+
+  letter-spacing: -1px;
+}
+
+
+/* TEXTO */
+
+.sobre-historia-texto {
+  max-width: 520px;
+}
+
+
+.sobre-historia-texto p {
+  margin: 0 0 20px;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+  color: #333;
+}
+
+
+.sobre-historia-texto p:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+
+  .sobre-historia {
+    width: calc(100% - 40px);
+
+    padding: 30px 0 90px;
+  }
+
+
+  .sobre-historia-titulo {
+  margin-bottom: 40px;
+
+  font-size: clamp(44px, 12vw, 64px);
+
+  letter-spacing: -1.5px;
+
+  text-align: left;
+}
+
+
+  .sobre-historia-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .sobre-historia-fotos {
+    height: 470px;
+  }
+
+
+  .foto-card {
+    width: 210px;
+  }
+
+
+  .foto-card-1 {
+    top: 10px;
+    left: 0;
+  }
+
+
+  .foto-card-2 {
+    top: 110px;
+    right: 0;
+  }
+
+
+  .foto-card-3 {
+    bottom: 0;
+    left: 70px;
+  }
+
+
+  .sobre-historia-conteudo {
+    max-width: 100%;
+  }
+
+
+  .sobre-historia-conteudo h3 {
+    font-size: 34px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .sobre-historia-texto p {
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+
+}
+/* ========================================
+   NASCIMENTO DA ROTTA
+======================================== */
+
+.sobre-nascimento {
+  width: 100%;
+
+  padding: 120px 40px 150px;
+
+  background: #ebe8e1;
+}
+
+
+.sobre-nascimento-conteudo {
+  width: min(900px, 100%);
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* PEQUENO TÍTULO */
+
+.sobre-nascimento-tag {
+  display: block;
+
+  margin-bottom: 28px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+
+  opacity: 0.55;
+}
+
+
+/* TÍTULO */
+
+.sobre-nascimento h2 {
+  margin: 0 0 55px;
+
+  font-size: clamp(48px, 6vw, 78px);
+
+  line-height: 0.98;
+
+  font-weight: 500;
+
+  letter-spacing: -2.5px;
+}
+
+
+/* TEXTO */
+
+.sobre-nascimento-texto {
+  width: min(650px, 100%);
+
+  margin: 0 auto;
+}
+
+
+.sobre-nascimento-texto p {
+  margin: 0 0 28px;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #333;
+}
+
+
+/* FRASE DE DESTAQUE */
+
+.sobre-nascimento-destaque {
+  margin: 45px 0 !important;
+
+  font-size: clamp(28px, 4vw, 42px) !important;
+
+  line-height: 1.15 !important;
+
+  font-weight: 500;
+
+  letter-spacing: -1px;
+
+  color: #123B5D !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .sobre-nascimento {
+    padding: 80px 25px 100px;
+  }
+
+
+  .sobre-nascimento-tag {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .sobre-nascimento h2 {
+    font-size: clamp(42px, 12vw, 58px);
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 40px;
+  }
+
+
+  .sobre-nascimento-texto p {
+    font-size: 16px;
+
+    line-height: 1.65;
+  }
+
+
+  .sobre-nascimento-destaque {
+    font-size: 30px !important;
+
+    margin: 35px 0 !important;
+  }
+
+}
+/* ========================================
+   NASCIMENTO DA ROTTA
+   VERSÃO AJUSTADA
+======================================== */
+
+.sobre-nascimento {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 110px 40px 130px;
+
+  background: #ebe8e1;
+}
+
+
+.sobre-nascimento-conteudo {
+  width: min(820px, 100%);
+  margin: 0 auto;
+
+  display: block;
+
+  text-align: center;
+}
+
+
+/* PEQUENO TÍTULO */
+
+.sobre-nascimento-tag {
+  display: block;
+
+  margin: 0 0 25px;
+
+  font-size: 12px;
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+
+  opacity: 0.55;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+.sobre-nascimento h2 {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 50px;
+
+  padding: 0;
+
+  font-size: clamp(44px, 5.5vw, 72px);
+
+  line-height: 1.02;
+
+  font-weight: 500;
+
+  letter-spacing: -2px;
+
+  text-align: center;
+}
+
+
+/* BLOCO DE TEXTO */
+
+.sobre-nascimento-texto {
+  display: block;
+
+  width: min(650px, 100%);
+
+  margin: 0 auto;
+
+  padding: 0;
+}
+
+
+/* PARÁGRAFOS */
+
+.sobre-nascimento-texto p {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 28px;
+
+  padding: 0;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  font-weight: 400;
+
+  text-align: center;
+
+  color: #333;
+}
+
+
+/* FRASE DE DESTAQUE */
+
+.sobre-nascimento-texto p.sobre-nascimento-destaque {
+  margin: 45px 0 !important;
+
+  font-size: clamp(28px, 4vw, 42px) !important;
+
+  line-height: 1.15 !important;
+
+  font-weight: 500;
+
+  letter-spacing: -1px;
+
+  text-align: center;
+
+  color: #123B5D;
+}
+
+
+/* ÚLTIMO PARÁGRAFO */
+
+.sobre-nascimento-texto p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .sobre-nascimento {
+    padding: 80px 25px 90px;
+  }
+
+
+  .sobre-nascimento-conteudo {
+    width: 100%;
+  }
+
+
+  .sobre-nascimento-tag {
+    margin-bottom: 20px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .sobre-nascimento h2 {
+    margin-bottom: 38px;
+
+    font-size: clamp(40px, 11vw, 58px);
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .sobre-nascimento-texto {
+    width: 100%;
+  }
+
+
+  .sobre-nascimento-texto p {
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    text-align: center;
+  }
+
+
+  .sobre-nascimento-texto p.sobre-nascimento-destaque {
+    margin: 35px 0 !important;
+
+    font-size: 30px !important;
+
+    line-height: 1.15 !important;
+  }
+
+}
+/* ========================================
+   CTA
+======================================== */
+
+.sobre-cta {
+  width: 100%;
+
+  padding: 140px 40px;
+
+  background: #123B5D;
+
+  box-sizing: border-box;
+}
+
+
+.sobre-cta-conteudo {
+  width: min(900px, 100%);
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* TAG */
+
+.sobre-cta-tag {
+  display: block;
+
+  margin-bottom: 28px;
+
+  font-size: 11px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+
+  color: #F4F0E7;
+
+  opacity: 0.55;
+}
+
+
+/* TÍTULO */
+
+.sobre-cta h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(42px, 5.5vw, 72px);
+
+  line-height: 0.98;
+
+  font-weight: 500;
+
+  letter-spacing: -2px;
+
+  color: #ffffff;
+}
+
+
+/* TEXTO */
+
+.sobre-cta p {
+  width: min(600px, 100%);
+
+  margin: 0 0 45px;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  font-weight: 400;
+
+  color: #F4F0E7;
+
+  opacity: 0.72;
+}
+
+
+/* BOTÃO */
+
+.sobre-cta-botao {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  padding: 17px 25px;
+
+  background: #F4F0E7;
+
+  color: #123B5D;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  border-radius: 2px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.sobre-cta-botao span {
+  font-size: 20px;
+
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+
+.sobre-cta-botao:hover {
+  transform: translateY(-4px);
+}
+
+
+.sobre-cta-botao:hover span {
+  transform: translateX(5px);
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .sobre-cta {
+    padding: 90px 25px;
+  }
+
+
+  .sobre-cta-tag {
+    margin-bottom: 22px;
+
+    font-size: 10px;
+  }
+
+
+  .sobre-cta h2 {
+    margin-bottom: 28px;
+
+    font-size: clamp(46px, 13vw, 68px);
+
+    letter-spacing: -2px;
+  }
+
+
+  .sobre-cta p {
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+  }
+
+
+  .sobre-cta-botao {
+    padding: 16px 22px;
+  }
+
+}

@@ -261,12 +261,12 @@ function Home() {
       jornada — do planejamento à chegada.
     </p>
 
-    <a
-  href="/mentoria"
+    <NavLink
+  to="/mentoria"
   className="mid-cta-button"
 >
   Conhecer a mentoria →
-</a>
+</NavLink>
 
   </div>
 
