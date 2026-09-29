@@ -1952,6 +1952,19 @@ picture {
   );
   pointer-events: none;
 }
+@media (max-width: 768px) {
+  .mentoria-banner {
+    height: 280px;
+  }
+
+  .mentoria-banner-image {
+    object-position: center center;
+  }
+
+  .mentoria-banner-gradient {
+    height: 160px;
+  }
+}
 .mentoria-cards {
   width: 100%;
   padding: 0 18px;
@@ -2075,15 +2088,35 @@ picture {
 
 @media (max-width: 600px) {
 
-  .mentoria-card-row {
+  .mentoria-cards {
     grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 0 8px;
   }
-}
-.mentoria-about {
-  width: 100%;
-  padding: 100px 25px;
-  background-color: #f4f0e7;
-  box-sizing: border-box;
+
+  .mentoria-card {
+    min-height: 0;
+    padding: 24px 22px;
+  }
+
+  .mentoria-card span {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .mentoria-card h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 1.12;
+  }
+
+  .mentoria-card p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
 }
 
 .mentoria-about-card {
@@ -2407,27 +2440,41 @@ picture {
   }
 
 }
-.mentoria-footer-description {
-  max-width: 260px;
-  margin-left: auto;
-  margin-right: 0;
-  padding-top: 8px;
-}
+@media (max-width: 600px) {
 
-.mentoria-footer-description p {
-  margin: 0;
-  color: #062b56;
-  font-family: "Inter", sans-serif;
-  font-size: 13px;
-  line-height: 1.7;
-}
+  .mentoria-method {
+    padding: 75px 20px;
+  }
 
-@media (max-width: 700px) {
+  .mentoria-method h2 {
+    margin-bottom: 45px;
+    font-size: 38px;
+    line-height: 1.05;
+  }
 
-  .mentoria-footer-description {
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
+  .mentoria-steps {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .mentoria-steps article {
+    padding: 26px 22px;
+  }
+
+  .mentoria-steps article span {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  .mentoria-steps article h3 {
+    font-size: 23px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  .mentoria-steps article p {
+    font-size: 13px;
+    line-height: 1.65;
   }
 
 }
