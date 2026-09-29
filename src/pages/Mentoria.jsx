@@ -70,13 +70,27 @@ function Mentoria() {
     de estudar na Itália em um plano claro, estratégico e possível.
   </p>
 
+  <div className="mentoria-hero-buttons">
+
   <a
     href="https://wa.me/qr/M24N44KQAVO5G1"
     target="_blank"
     rel="noopener noreferrer"
+    className="mentoria-button-whatsapp"
   >
-    Quero conhecer a mentoria
+    Tirar dúvidas no WhatsApp
   </a>
+
+  <a
+    href="https://pay.kiwify.com.br/6DPQAnr"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mentoria-button-checkout"
+  >
+    Quero ser um mentorado
+  </a>
+
+</div>
 
 </div>
 

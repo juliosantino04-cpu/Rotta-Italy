@@ -1901,21 +1901,63 @@ picture {
   line-height: 1.75;
 }
 
-.mentoria-hero-content a {
+.mentoria-hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mentoria-hero-buttons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 44px;
   padding: 12px 20px;
-  background-color: #062b56;
-  color: #f4f0e7;
-  border: 1px solid #062b56;
+  box-sizing: border-box;
+
   border-radius: 6px;
+
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+
   cursor: pointer;
-  transition: all 0.25s ease;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.mentoria-button-whatsapp {
+  background-color: #062b56;
+  color: #f4f0e7;
+  border: 1px solid #062b56;
+}
+
+.mentoria-button-checkout {
+  background-color: #b83a3a;
+  color: #f4f0e7;
+  border: 1px solid #b83a3a;
+}
+
+.mentoria-hero-buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(6, 43, 86, 0.15);
+}
+
+.mentoria-button-whatsapp:hover {
+  background-color: #f4f0e7;
+  color: #062b56;
+}
+
+.mentoria-button-checkout:hover {
+  background-color: #f4f0e7;
+  color: #b83a3a;
 }
 .mentoria-banner {
   position: relative;
@@ -3404,4 +3446,937 @@ picture {
     padding: 16px 22px;
   }
 
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700&display=swap');
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  background: #ffffff;
+  color: #123B5D;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.faq-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.faq-container {
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.faq-hero {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 90px;
+  background: #f5f5f3;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 25px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 1.4;
+}
+
+.faq-hero h1 {
+  display: block;
+  margin: 0;
+
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(60px, 9vw, 110px);
+  font-weight: 600;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+}
+
+.faq-hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero-description {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+
+  margin: 35px 0 30px;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 15px 22px;
+
+  background: #123B5D;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: transform 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+.hero-button span {
+  font-size: 18px;
+}
+
+
+/* Decoração discreta */
+
+.faq-hero-decoration {
+  position: absolute;
+  pointer-events: none;
+}
+
+.decoration-one {
+  width: 250px;
+  height: 250px;
+
+  right: 5%;
+  top: 15%;
+
+  border: 1px solid #d5d5d2;
+  border-radius: 50%;
+}
+
+.decoration-two {
+  width: 120px;
+  height: 120px;
+
+  right: 15%;
+  bottom: 10%;
+
+  border: 1px solid #d5d5d2;
+  border-radius: 50%;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.faq-intro {
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.intro-grid {
+  display: block;
+  width: calc(100% - 40px);
+  max-width: 1000px;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.faq-intro h2 {
+  display: block;
+  margin: 0;
+
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(40px, 6vw, 65px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.faq-intro h2 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.intro-text {
+  display: block;
+
+  width: 100%;
+  max-width: 650px;
+
+  margin-top: 35px;
+  margin-left: 0;
+}
+
+.intro-text p {
+  display: block;
+
+  margin: 0 0 18px;
+
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+
+/* =====================================================
+   FAQ SECTION
+===================================================== */
+
+.faq-section {
+  display: block;
+  width: 100%;
+  padding: 80px 0;
+  background: #f8f8f7;
+}
+
+.faq-section > .faq-container {
+  display: block;
+}
+
+
+/* =====================================================
+   CATEGORIA
+===================================================== */
+
+.faq-category {
+  display: block !important;
+
+  width: 100% !important;
+
+  margin: 0 0 70px !important;
+  padding: 0 !important;
+}
+
+
+/* =====================================================
+   TÍTULO DA CATEGORIA
+===================================================== */
+
+.category-heading {
+  display: block !important;
+
+  width: 100% !important;
+
+  margin: 0 0 25px !important;
+  padding: 0 !important;
+}
+
+.category-heading span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.category-heading h3 {
+  display: block !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "League Spartan", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+
+/* =====================================================
+   LISTA DE PERGUNTAS
+===================================================== */
+
+.faq-list {
+  display: block !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-top: 1px solid #d8d8d5;
+}
+
+
+/* =====================================================
+   ITEM
+===================================================== */
+
+.faq-item {
+  display: block !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-bottom: 1px solid #d8d8d5;
+}
+
+
+/* =====================================================
+   PERGUNTA
+===================================================== */
+
+.faq-question {
+  display: flex !important;
+
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  width: 100% !important;
+
+  min-height: 75px;
+
+  margin: 0 !important;
+  padding: 20px 0 !important;
+
+  gap: 20px;
+
+  border: 0 !important;
+  outline: none;
+
+  background: transparent !important;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+
+/* TEXTO DA PERGUNTA */
+
+.faq-question > span:first-child {
+  display: block !important;
+
+  width: auto !important;
+  max-width: none !important;
+
+  flex: 1 1 auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  text-align: left;
+}
+
+
+/* =====================================================
+   ÍCONE
+===================================================== */
+
+.faq-icon {
+  display: flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 36px !important;
+
+  width: 36px !important;
+  height: 36px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 1px solid #bdbdb9;
+  border-radius: 50%;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+
+/* =====================================================
+   RESPOSTA
+===================================================== */
+
+/*
+   SEM GRID
+   SEM FLEX
+   SEM POSITION
+   SEM SOBREPOSIÇÃO
+*/
+
+.faq-answer {
+  display: none !important;
+
+  position: static !important;
+
+  width: 100% !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+}
+
+
+/* RESPOSTA ABERTA */
+
+.faq-answer.open {
+  display: block !important;
+
+  position: static !important;
+
+  width: 100% !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 56px 28px 0 !important;
+
+  overflow: visible !important;
+}
+
+
+/* TEXTO DA RESPOSTA */
+
+.faq-answer p {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 750px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+
+  text-align: left;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.faq-cta {
+  display: block;
+  width: 100%;
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.cta-card {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  padding: 60px;
+
+  background: #123B5D;
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 700px;
+}
+
+.cta-content .section-label {
+  color: #F4F0E7;
+}
+
+.cta-content h2 {
+  display: block;
+
+  margin: 0;
+
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(40px, 6vw, 65px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.cta-content h2 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.cta-content p {
+  display: block;
+
+  width: 100%;
+  max-width: 600px;
+
+  margin: 30px 0;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   BOTÕES CTA
+===================================================== */
+
+.mentoria-hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+.mentoria-button-whatsapp,
+.mentoria-button-checkout {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+
+  padding: 13px 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: transform 0.2s ease;
+}
+
+.mentoria-button-whatsapp {
+  background: #F4F0E7;
+  color: #123B5D;
+}
+
+.mentoria-button-checkout {
+  border: 1px solid #F4F0E7;
+  color: #F4F0E7;
+}
+
+.mentoria-button-whatsapp:hover,
+.mentoria-button-checkout:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   MARCA "R"
+===================================================== */
+
+.cta-mark {
+  position: absolute;
+
+  right: 35px;
+  bottom: -45px;
+
+  font-family: "League Spartan", sans-serif;
+  font-size: 220px;
+  font-weight: 700;
+  line-height: 1;
+
+  opacity: 0.08;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .faq-container {
+    width: calc(100% - 32px);
+  }
+
+  .faq-hero {
+    padding: 75px 0 70px;
+  }
+
+  .faq-hero h1 {
+    font-size: clamp(55px, 15vw, 85px);
+  }
+
+  .faq-intro {
+    padding: 65px 0;
+  }
+
+  .faq-section {
+    padding: 60px 0;
+  }
+
+  .category-heading h3 {
+    font-size: 29px;
+  }
+
+  .faq-category {
+    margin-bottom: 55px !important;
+  }
+
+  .cta-card {
+    padding: 45px 30px;
+  }
+
+  .mentoria-hero-buttons {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mentoria-button-whatsapp,
+  .mentoria-button-checkout {
+    width: 100%;
+  }
+
+  .cta-mark {
+    font-size: 160px;
+  }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .faq-container {
+    width: calc(100% - 28px);
+  }
+
+  .faq-hero {
+    padding: 60px 0 55px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+  }
+
+  .faq-hero h1 {
+    font-size: 58px;
+    line-height: 0.88;
+  }
+
+  .hero-description {
+    margin-top: 28px;
+
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .faq-intro {
+    padding: 55px 0;
+  }
+
+  .faq-intro h2 {
+    font-size: 43px;
+  }
+
+  .intro-text {
+    margin-top: 25px;
+  }
+
+  .intro-text p {
+    font-size: 15px;
+  }
+
+  .faq-section {
+    padding: 50px 0;
+  }
+
+  .category-heading {
+    margin-bottom: 18px !important;
+  }
+
+  .category-heading h3 {
+    font-size: 27px;
+  }
+
+  .faq-question {
+    min-height: 70px;
+
+    gap: 12px;
+
+    padding: 18px 0 !important;
+  }
+
+  .faq-question > span:first-child {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .faq-icon {
+    flex: 0 0 32px !important;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    font-size: 18px;
+  }
+
+  .faq-answer.open {
+    padding: 0 0 22px 0 !important;
+  }
+
+  .faq-answer p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .faq-cta {
+    padding: 50px 0;
+  }
+
+  .cta-card {
+    padding: 40px 22px;
+  }
+
+  .cta-content h2 {
+    font-size: 43px;
+  }
+
+  .cta-content p {
+    font-size: 14px;
+  }
+
+  .cta-mark {
+    right: 10px;
+    bottom: -25px;
+    font-size: 120px;
+  }
+
+  .decoration-one {
+    width: 140px;
+    height: 140px;
+    right: -60px;
+  }
+
+  .decoration-two {
+    display: none;
+  }
+}
+/* =========================================
+   HERO — TUDO EMPILHADO
+========================================= */
+
+.faq-hero .hero-content {
+  display: block !important;
+  width: 100% !important;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Etiqueta */
+.faq-hero .eyebrow {
+  display: block !important;
+  width: 100% !important;
+
+  margin: 0 0 25px 0 !important;
+  padding: 0 !important;
+}
+
+/* Título */
+.faq-hero h1 {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 800px;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  text-align: left !important;
+}
+
+/* Cada linha do título */
+.faq-hero h1 br {
+  display: block !important;
+}
+
+/* Descrição */
+.faq-hero .hero-description {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 600px;
+
+  margin: 35px 0 30px 0 !important;
+  padding: 0 !important;
+
+  text-align: left !important;
+}
+
+/* Botão */
+.faq-hero .hero-button {
+  display: inline-flex !important;
+
+  width: auto !important;
+
+  margin: 0 !important;
+  padding: 15px 22px !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  text-align: center !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .faq-hero .hero-content {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .faq-hero .eyebrow {
+    display: block !important;
+    margin-bottom: 22px !important;
+  }
+
+  .faq-hero h1 {
+    display: block !important;
+
+    width: 100% !important;
+
+    font-size: 58px !important;
+    line-height: 0.88 !important;
+
+    text-align: left !important;
+  }
+
+  .faq-hero .hero-description {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin-top: 28px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .faq-hero .hero-button {
+    display: inline-flex !important;
+  }
+}
+.faq-hero-logo {
+  position: absolute;
+  width: 300px;
+  max-width: 300px;
+  height: auto;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.9;
+  animation: faqLogoFloat 4s ease-in-out infinite;
+}
+@keyframes faqLogoFloat {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 10px));
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 600px) {
+  .faq-hero-logo {
+    width: 80px;
+    max-width: 80px;
+    right: 15px;
+    bottom: 20px;
+    top: auto;
+    transform: none;
+    opacity: 0.75;
+    animation: faqLogoFloatMobile 4s ease-in-out infinite;
+  }
+
+  @keyframes faqLogoFloatMobile {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
