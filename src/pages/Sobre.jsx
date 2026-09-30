@@ -1,4 +1,5 @@
 import "../App.css";
+import banner from "../assets/bannersobre.png" 
 
 function Sobre() {
   return (
@@ -9,7 +10,7 @@ function Sobre() {
       <section className="sobre-hero">
 
         <div className="sobre-banner">
-          <img src="/src/assets/bannersobre.png" alt="Sobre a Rota" />
+          <img src={banner} alt="Sobre a Rota" />
         </div>
 
       </section>

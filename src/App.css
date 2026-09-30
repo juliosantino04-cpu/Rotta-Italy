@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 22px 5%;
-  background-color: #F4F0E7;
+  background-color: #f4f0e7;
 }
 
 header h1 {
@@ -564,7 +564,7 @@ nav a.active {
   min-height: 280px;
   padding: 30px;
 
-  background-color: #f4f0e7;
+  background-color: #ffffff;
   border: 1px solid rgba(6, 43, 86, 0.2);
   border-radius: 8px;
 
@@ -3369,7 +3369,7 @@ picture {
 
   padding: 17px 25px;
 
-  background: #F4F0E7;
+  background: #ffffff;
 
   color: #123B5D;
 

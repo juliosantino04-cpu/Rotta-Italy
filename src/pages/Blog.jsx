@@ -2,7 +2,7 @@ function Blog() {
   return (
     <main>
       <h1>Blog</h1>
-      <p>Conteúdo da página do Blog.</p>
+      <p>Em breve você poderá acessar artigos e conteúdos relacionados à educação na Itália.</p>
     </main>
   )
 }
