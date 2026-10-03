@@ -2163,7 +2163,9 @@ picture {
   }
 
 }
-
+.mentoria-about {
+background: #FFFDF8
+}
 .mentoria-about-card {
   max-width: 1050px;
   margin: 0 auto;
@@ -4283,4 +4285,10 @@ a {
   .mentoria-method > div {
     width: 100%;
   }
+}
+.mentoria-method {
+background: #FFFDF8;
+}
+.mentoria-support {
+background: #FFFDF8;
 }
