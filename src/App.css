@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 22px 5%;
-  background-color: #f4f0e7;
+  background-color: #FFFDF8;
 }
 
 header h1 {
@@ -11,7 +11,7 @@ header h1 {
 }
 main h1 {
   font-family: "League Spartan", sans-serif;
-  color: #062b56;
+  color: #123B5D;
   font-weight: 700;
   letter-spacing: 0.5px;
   font-size: 48px;
@@ -67,7 +67,7 @@ section article p {
   line-height: 1.5;
 }
 body {
-  background-color: #F4F0E7;
+  background-color: #FFFDF8;
   margin: 0;
 }
 .logo img {
@@ -79,16 +79,16 @@ nav a {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: #062b56;
+  color: #123B5D;
   text-decoration: none;
   transition: 0.2s ease;
 }
 
 nav a:hover {
-  color: #B83A3A;
+  color: #B51111;
 }
 nav a.active {
-  color: #B83A3A;
+  color: #B51111;
 }
 .header {
   display: flex;
@@ -135,7 +135,7 @@ nav a.active {
   border: none;
   font-size: 28px;
   line-height: 1;
-  color: #062b56;
+  color: #123B5D;
   cursor: pointer;
   padding: 0;
   display: flex;
@@ -149,8 +149,8 @@ nav a.active {
   position: absolute;
   top: 40px;
   left: 0;
-  background-color: #f4f0e7;
-  border: 1px solid #062b56;
+  background-color: #FFFDF8;
+  border: 1px solid #123B5D;
   border-radius: 6px;
   padding: 10px;
   min-width: 180px;
@@ -159,14 +159,14 @@ nav a.active {
 
 .menu-dropdown a {
   display: block;
-  color: #062b56;
+  color: #123B5D;
   text-decoration: none;
   padding: 10px;
 }
 
 .menu-dropdown a:hover {
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #123B5D;
+  color: #FFFDF8;
 }
 
 /* ABRE O MENU AO PASSAR O MOUSE */
@@ -183,10 +183,10 @@ nav a.active {
   align-items: center;
   justify-content: center;
 
-  color: #062b56;
-  background-color: #f4f0e7;
+  color: #123B5D;
+  background-color: #FFFDF8;
 
-  border: 1px solid #062b56;
+  border: 1px solid #123B5D;
   border-radius: 6px;
 
   padding: 8px 14px;
@@ -197,8 +197,8 @@ nav a.active {
 
 .options-button:hover,
 .student-access:hover {
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #123B5D;
+  color: #FFFDF8;
 }
 .side-menu {
   position: fixed;
@@ -207,7 +207,7 @@ nav a.active {
   width: 280px;
   height: 100vh;
 
-  background-color: #f4f0e7;
+  background-color: #FFFDF8;
 
   box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
 
@@ -228,7 +228,7 @@ nav a.active {
   border: none;
 
   font-size: 32px;
-  color: #062b56;
+  color: #123B5D;
 
   cursor: pointer;
 
@@ -247,7 +247,7 @@ nav a.active {
 }
 
 .side-menu-links a {
-  color: #062b56;
+  color: #123B5D;
   text-decoration: none;
   font-size: 18px;
   padding: 14px 10px;
@@ -255,13 +255,13 @@ nav a.active {
 }
 
 .side-menu-links a:hover {
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #123B5D;
+  color: #FFFDF8;
 }
 
 .side-menu-links a.active {
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #123B5D;
+  color: #FFFDF8;
 }
 
 /* FUNDO ATRÁS DO MENU */
@@ -301,8 +301,8 @@ nav a.active {
   width: 100%;
   height: 38px;
   overflow: hidden;
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #123B5D;
+  color: #FFFDF8;
 
   display: flex;
   align-items: center;
@@ -352,7 +352,7 @@ nav a.active {
 
 .intro-section h1 {
   margin: 0;
-  color: #062b56;
+  color: #123B5D;
   font-size: 42px;
   line-height: 1.1;
   font-weight: 500;
@@ -361,7 +361,7 @@ nav a.active {
 .intro-section p {
   margin: 18px auto 0;
   max-width: 650px;
-  color: #062b56;
+  color: #123B5D;
   font-size: 17px;
   line-height: 1.6;
 }
@@ -389,7 +389,7 @@ nav a.active {
 
   margin: 0 0 18px;
 
-  color: #062b56;
+  color: #123B5D;
   font-size: 11px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -401,7 +401,7 @@ nav a.active {
   width: 100%;
   margin: 0 0 22px;
 
-  color: #062b56;
+  color: #123B5D;
   font-size: 40px;
   line-height: 1.15;
   font-weight: 500;
@@ -415,7 +415,7 @@ nav a.active {
 
   margin: 0;
 
-  color: #062b56;
+  color: #123B5D;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -533,7 +533,7 @@ nav a.active {
 
   margin-bottom: 14px;
 
-  color: #062b56;
+  color: #123B5D;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -546,7 +546,7 @@ nav a.active {
 
   margin: 0;
 
-  color: #062b56;
+  color: #123B5D;
   font-size: 40px;
   line-height: 1.15;
   font-weight: 500;
@@ -564,7 +564,7 @@ nav a.active {
   min-height: 280px;
   padding: 30px;
 
-  background-color: #ffffff;
+  background-color: #F8FBFF;
   border: 1px solid rgba(6, 43, 86, 0.2);
   border-radius: 8px;
 
@@ -578,7 +578,7 @@ nav a.active {
 .service-number {
   margin-bottom: 45px;
 
-  color: #062b56;
+  color: #123B5D;
   font-size: 12px;
   letter-spacing: 2px;
 }
@@ -586,7 +586,7 @@ nav a.active {
 .service-card h3 {
   margin: 0 0 15px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 25px;
   font-weight: 500;
 }
@@ -594,7 +594,7 @@ nav a.active {
 .service-card p {
   margin: 0;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -603,7 +603,7 @@ nav a.active {
   margin-top: auto;
   padding-top: 25px;
 
-  color: #062b56;
+  color: #123B5D;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -650,7 +650,7 @@ nav a.active {
 .italy-text h2 {
   margin: 0 0 25px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 40px;
   line-height: 1.15;
   font-weight: 500;
@@ -662,7 +662,7 @@ nav a.active {
   max-width: 500px;
   margin: 0 0 30px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 16px;
   line-height: 1.7;
 
@@ -675,10 +675,10 @@ nav a.active {
 
   padding: 11px 18px;
 
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #0A2A45;
+  color: #FFFDF8;
 
-  border: 1px solid #062b56;
+  border: 1px solid #0A2A45;
   border-radius: 6px;
 
   text-decoration: none;
@@ -686,8 +686,8 @@ nav a.active {
 }
 
 .italy-button:hover {
-  background-color: #f4f0e7;
-  color: #062b56;
+  background-color: #FFFDF8;
+  color: #0A2A45;
 }
 
 .italy-list {
@@ -711,7 +711,7 @@ nav a.active {
   display: block;
   margin-bottom: 10px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 11px;
   letter-spacing: 2px;
 }
@@ -720,7 +720,7 @@ nav a.active {
   display: block;
   margin-bottom: 8px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 20px;
   font-weight: 500;
 }
@@ -728,7 +728,7 @@ nav a.active {
 .italy-item p {
   margin: 0;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -844,7 +844,7 @@ nav a.active {
   width: 100% !important;
   display: block !important;
   padding: 100px 25px;
-  background-color: #062b56;
+  background-color: #0A2A45;
   box-sizing: border-box;
   text-align: center !important;
 }
@@ -861,7 +861,7 @@ nav a.active {
   display: block !important;
   width: 100% !important;
   margin: 0 0 22px !important;
-  color: #f4f0e7 !important;
+  color: #F8FBFF !important;
   text-align: center !important;
 }
 
@@ -869,7 +869,7 @@ nav a.active {
   display: block !important;
   width: 100% !important;
   margin: 0 0 25px !important;
-  color: #f4f0e7 !important;
+  color: #F8FBFF !important;
   font-size: 44px;
   line-height: 1.2;
   font-weight: 500;
@@ -881,7 +881,7 @@ nav a.active {
   width: 100% !important;
   max-width: 900px !important;
   margin: 0 auto 30px !important;
-  color: #f4f0e7 !important;
+  color: #F8FBFF !important;
   font-size: 17px;
   line-height: 1.6;
   text-align: center !important;
@@ -892,9 +892,9 @@ nav a.active {
   align-items: center;
   justify-content: center;
   padding: 12px 20px;
-  background-color: #f4f0e7;
-  color: #062b56;
-  border: 1px solid #f4f0e7;
+  background-color: #F8FBFF;
+  color: #0A2A45;
+  border: 1px solid #F8FBFF;
   border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
@@ -944,7 +944,7 @@ nav a.active {
   display: block !important;
   width: 100%;
   margin: 0 0 22px;
-  color: #062b56;
+  color: #0A2A45;
   font-size: 40px;
   line-height: 1.2;
   font-weight: 500;
@@ -956,7 +956,7 @@ nav a.active {
   width: 100%;
   max-width: 700px;
   margin: 0;
-  color: #062b56;
+  color: #0A2A45;
   font-size: 16px;
   line-height: 1.7;
   text-align: left !important;
@@ -992,7 +992,7 @@ nav a.active {
   display: block;
   margin-bottom: 55px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 11px;
   letter-spacing: 2px;
 }
@@ -1003,7 +1003,7 @@ nav a.active {
 
   margin: 0 0 16px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 21px;
   line-height: 1.25;
   font-weight: 500;
@@ -1015,7 +1015,7 @@ nav a.active {
 
   margin: 0;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -1084,7 +1084,7 @@ nav a.active {
 
   margin: 0 0 25px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 42px;
   line-height: 1.15;
   font-weight: 500;
@@ -1099,7 +1099,7 @@ nav a.active {
 
   margin: 0 0 30px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 16px;
   line-height: 1.75;
 
@@ -1113,10 +1113,10 @@ nav a.active {
 
   padding: 12px 19px;
 
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #0A2A45;
+  color: #FFFDF8;
 
-  border: 1px solid #062b56;
+  border: 1px solid #0A2A45;
   border-radius: 6px;
 
   text-decoration: none;
@@ -1126,8 +1126,8 @@ nav a.active {
 }
 
 .mentoria-home-button:hover {
-  background-color: #f4f0e7;
-  color: #062b56;
+  background-color: #FFFDF8;
+  color: #0A2A45;
 }
 
 .mentoria-home-list {
@@ -1154,7 +1154,7 @@ nav a.active {
 .mentoria-home-item > span {
   display: block;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 11px;
   letter-spacing: 2px;
 }
@@ -1165,7 +1165,7 @@ nav a.active {
 
   margin: 0 0 8px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 20px;
   line-height: 1.3;
   font-weight: 500;
@@ -1179,7 +1179,7 @@ nav a.active {
 
   margin: 0;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 14px;
   line-height: 1.65;
 
@@ -1308,7 +1308,7 @@ nav a.active {
 
   margin: 0 0 28px;
 
-  color: #062b56;
+  color: #0A2A45;
 
   font-size: 42px;
   line-height: 1.15;
@@ -1324,7 +1324,7 @@ nav a.active {
 
   margin: 0 0 20px;
 
-  color: #062b56;
+  color: #0A2A45;
 
   font-size: 16px;
   line-height: 1.8;
@@ -1337,14 +1337,14 @@ nav a.active {
 
   margin-top: 12px;
 
-  color: #062b56;
+  color: #0A2A45;
 
   font-size: 14px;
   font-weight: 600;
 
   text-decoration: none;
 
-  border-bottom: 1px solid #062b56;
+  border-bottom: 1px solid #0A2A45;
   padding-bottom: 4px;
 }
 
@@ -1375,7 +1375,7 @@ nav a.active {
 .inside-rotta-section {
   width: 100%;
   padding: 110px 40px;
-  background-color: #f4f0e7;
+  background-color: #FFFDF8;
   box-sizing: border-box;
 }
 
@@ -1396,7 +1396,7 @@ nav a.active {
   max-width: 850px;
   margin: 0 0 25px;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 44px;
   line-height: 1.18;
   font-weight: 500;
@@ -1409,7 +1409,7 @@ nav a.active {
   max-width: 700px;
   margin: 0;
 
-  color: #062b56;
+  color: #0A2A45;
   font-size: 16px;
   line-height: 1.8;
 
@@ -1444,7 +1444,7 @@ nav a.active {
 
   padding: 28px 0;
 
-  color: #062b56;
+  color: #0A2A45;
 
   font-size: 22px;
   line-height: 1.3;
@@ -1479,7 +1479,7 @@ nav a.active {
 .rotta-accordion-content p {
   margin: 0;
 
-  color: #062b56;
+  color: #0A2A45;
 
   font-size: 15px;
   line-height: 1.8;
@@ -1504,7 +1504,7 @@ nav a.active {
 .mid-cta {
   width: 100%;
   padding: 75px 40px;
-  background-color: rgba(6, 43, 86, 0.06);
+  background-color: #123B5D;
   box-sizing: border-box;
 }
 
@@ -1520,7 +1520,7 @@ nav a.active {
   display: block !important;
   width: 100%;
   margin: 0 0 18px;
-  color: #062b56;
+  color: #F8FBFF;
   text-align: center !important;
 }
 
@@ -1528,7 +1528,7 @@ nav a.active {
   display: block !important;
   width: 100%;
   margin: 0 0 20px;
-  color: #062b56;
+  color: #F8FBFF;
   font-size: 38px;
   line-height: 1.2;
   font-weight: 500;
@@ -1540,7 +1540,7 @@ nav a.active {
   width: 100%;
   max-width: 680px;
   margin: 0 auto 28px;
-  color: #062b56;
+  color: #F8FBFF;
   font-size: 16px;
   line-height: 1.75;
   text-align: center !important;
@@ -1551,9 +1551,9 @@ nav a.active {
   align-items: center;
   justify-content: center;
   padding: 12px 20px;
-  background-color: #062b56;
-  color: #f4f0e7;
-  border: 1px solid #062b56;
+  background-color: #F8FBFF;
+  color: #0A2A45;
+  border: 1px solid #F8FBFF;
   border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
@@ -1561,8 +1561,8 @@ nav a.active {
 }
 
 .mid-cta-button:hover {
-  background-color: #f4f0e7;
-  color: #062b56;
+  background-color: #0A2A45;
+  color: #F8FBFF;
 }
 
 @media (max-width: 768px) {
@@ -1587,8 +1587,8 @@ nav a.active {
 }
 .site-footer {
   width: 100%;
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #0A2A45;
+  color: #F8FBFF;
   padding: 80px 40px 25px;
   box-sizing: border-box;
 }
@@ -1612,7 +1612,7 @@ nav a.active {
 .footer-brand h2 {
   display: block !important;
   margin: 0 0 20px;
-  color: #f4f0e7;
+  color: #F8FBFF;
   font-size: 42px;
   line-height: 1;
   font-weight: 500;
@@ -1623,7 +1623,7 @@ nav a.active {
   display: block !important;
   max-width: 330px;
   margin: 0;
-  color: rgba(244, 240, 231, 0.75);
+  color: #F8FBFF;
   font-size: 15px;
   line-height: 1.7;
   text-align: left !important;
@@ -1639,7 +1639,7 @@ nav a.active {
 .footer-column > span {
   display: block;
   margin-bottom: 20px;
-  color: #f4f0e7;
+  color: #F8FBFF;
   font-size: 10px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -1648,7 +1648,7 @@ nav a.active {
 .footer-column a {
   display: block;
   margin-bottom: 12px;
-  color: rgba(244, 240, 231, 0.75);
+  color: #F8FBFF;
   font-size: 14px;
   line-height: 1.5;
   text-decoration: none;
@@ -1656,7 +1656,7 @@ nav a.active {
 }
 
 .footer-column a:hover {
-  color: #f4f0e7;
+  color: #F8FBFF;
   transform: translateX(3px);
 }
 
@@ -1688,10 +1688,10 @@ nav a.active {
 
   padding: 11px 18px;
 
-  background-color: #f4f0e7;
-  color: #062b56;
+  background-color: #F8FBFF;
+  color: #0A2A45;
 
-  border: 1px solid #f4f0e7;
+  border: 1px solid #F8FBFF;
   border-radius: 6px;
 
   text-decoration: none;
@@ -1702,8 +1702,8 @@ nav a.active {
 }
 
 .footer-cta a:hover {
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #0A2A45;
+  color: #F8FBFF;
 }
 
 .footer-bottom {
@@ -1855,7 +1855,7 @@ picture {
 
 .mentoria-hero {
   padding: 0 0 110px;
-  background-color: #f4f0e7;
+  background-color: #FFFDF8;
   box-sizing: border-box;
 }
 
@@ -1873,7 +1873,7 @@ picture {
 .mentoria-hero-content .mentoria-label {
   display: block;
   margin-bottom: 20px;
-  color: #b83a3a;
+  color: #B51111;
   font-family: "Inter", sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -1883,7 +1883,7 @@ picture {
 .mentoria-hero-content h1 {
   max-width: 850px;
   margin: 0 0 25px;
-  color: #062b56;
+  color: #123B5D;
   font-family: "League Spartan", sans-serif;
   font-size: 58px;
   font-weight: 500;
@@ -1894,7 +1894,7 @@ picture {
 .mentoria-hero-content p {
   max-width: 620px;
   margin: 0 0 35px;
-  color: #062b56;
+  color: #123B5D;
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -1934,15 +1934,15 @@ picture {
 }
 
 .mentoria-button-whatsapp {
-  background-color: #062b56;
-  color: #f4f0e7;
-  border: 1px solid #062b56;
+  background-color: #FFFDF8;
+  color: #073324;
+  border: 1px solid #073324;
 }
 
 .mentoria-button-checkout {
-  background-color: #b83a3a;
-  color: #f4f0e7;
-  border: 1px solid #b83a3a;
+  background-color: #B51111;
+  color: #F8FBFF;
+  border: 1px solid #B51111;
 }
 
 .mentoria-hero-buttons a:hover {
@@ -1951,13 +1951,14 @@ picture {
 }
 
 .mentoria-button-whatsapp:hover {
-  background-color: #f4f0e7;
-  color: #062b56;
+  background-color: #073324;
+  color: #F8FBFF;
 }
 
 .mentoria-button-checkout:hover {
-  background-color: #f4f0e7;
-  color: #b83a3a;
+  background-color: #F8FBFF;
+  color: #650303;
+  border: 1px solid #650303
 }
 .mentoria-banner {
   position: relative;
@@ -1965,7 +1966,7 @@ picture {
   height: 450px;
   margin-left: calc(50% - 50vw);
   overflow: hidden;
-  background-color: #f4f0e7;
+  background-color: #FFFDF8;
 }
 
 .mentoria-banner-image {
@@ -1978,21 +1979,23 @@ picture {
   object-position: center;
 }
 
-.mentoria-banner-gradient {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 220px;
-  background: linear-gradient(
+.mentoria-banner-image {
+  width: 100%;
+  display: block;
+
+  -webkit-mask-image: linear-gradient(
     to bottom,
-    transparent 0%,
-    rgba(244, 240, 231, 0.25) 30%,
-    rgba(244, 240, 231, 0.75) 70%,
-    #f4f0e7 100%
+    black 85%,
+    rgba(0, 0, 0, 0.85) 93%,
+    transparent 100%
   );
-  pointer-events: none;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black 85%,
+    rgba(0, 0, 0, 0.85) 93%,
+    transparent 100%
+  );
 }
 @media (max-width: 768px) {
   .mentoria-banner {
@@ -2041,8 +2044,8 @@ picture {
   min-height: 235px;
   padding: 28px;
 
-  background-color: #062b56;
-  color: #f4f0e7;
+  background-color: #123B5D;
+  color: #FFFDF8;
 
   border: 1px solid rgba(244, 240, 231, 0.12);
   border-radius: 6px;
@@ -2081,7 +2084,7 @@ picture {
 
   margin-bottom: 25px;
 
-  color: #b83a3a;
+  color: #B51111;
 
   font-family: "Inter", sans-serif;
   font-size: 19px;
@@ -2094,7 +2097,7 @@ picture {
 .mentoria-card h3 {
   margin: 0 0 14px;
 
-  color: #f4f0e7;
+  color: #F8FBFF;
 
   font-family: "League Spartan", sans-serif;
   font-size: 23px;
@@ -2113,11 +2116,11 @@ picture {
 }
 
 .mentoria-card-bonus {
-  background-color: #b83a3a;
+  background-color: #B51111;
 }
 
 .mentoria-card-bonus span {
-  color: #f4f0e7;
+  color: #F8FBFF;
   border-color: rgba(244, 240, 231, 0.5);
 }
 @media (max-width: 900px) {
@@ -2171,7 +2174,7 @@ picture {
 
   padding: 28px;
 
-  background-color: #062b56;
+  background-color: #0A2A45;
   border-radius: 10px;
 
   box-shadow: 0 20px 50px rgba(6, 43, 86, 0.10);
@@ -2203,7 +2206,7 @@ picture {
 
 .mentoria-about-content h2 {
   margin: 0 0 20px;
-  color: #f4f0e7;
+  color: #F8FBFF;
   font-family: "League Spartan", sans-serif;
   font-size: 45px;
   font-weight: 500;
@@ -2214,7 +2217,7 @@ picture {
 .mentoria-about-content p {
   margin: 0;
 
-  color: #f4f0e7;
+  color: #F8FBFF;
 
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -2247,7 +2250,7 @@ picture {
 .mentoria-cta {
   width: 100%;
   padding: 130px 25px;
-  background-color: #062b56;
+  background-color: #0A2A45;
   box-sizing: border-box;
   text-align: center;
 }
@@ -2266,7 +2269,7 @@ picture {
   display: block;
   margin-bottom: 22px;
 
-  color: #b83a3a;
+  color: #B51111;
 
   font-family: "Inter", sans-serif;
   font-size: 11px;
@@ -2278,7 +2281,7 @@ picture {
   max-width: 760px;
   margin: 0 auto 25px;
 
-  color: #f4f0e7;
+  color: #F8FBFF;
 
   font-family: "League Spartan", sans-serif;
   font-size: 58px;
@@ -2291,7 +2294,7 @@ picture {
   max-width: 650px;
   margin: 0 auto 38px;
 
-  color: rgba(244, 240, 231, 0.78);
+  color: #F8FBFF;
 
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -2306,10 +2309,10 @@ picture {
 
   padding: 15px 28px;
 
-  background-color: #b83a3a;
-  color: #f4f0e7;
+  background-color: #B51111;
+  color: #F8FBFF;
 
-  border: 1px solid #b83a3a;
+  border: 1px solid #B51111;
   border-radius: 6px;
 
   font-family: "Inter", sans-serif;
@@ -2325,8 +2328,8 @@ picture {
 }
 
 .mentoria-cta-content a:hover {
-  background-color: #f4f0e7;
-  color: #062b56;
+  background-color: #F8FBFF;
+  color: #B51111;
 
   transform: translateY(-3px);
 
@@ -2344,7 +2347,7 @@ picture {
 }
 .mentoria-footer {
   width: 100%;
-  background-color: #f4f0e7;
+  background-color: #FFFDF8;
   border-top: 1px solid rgba(6, 43, 86, 0.10);
   box-sizing: border-box;
 }
@@ -2373,7 +2376,7 @@ picture {
 
 .mentoria-footer-brand p {
   margin: 0;
-  color: #062b56;
+  color: #0A2A45;
   font-family: "Inter", sans-serif;
   font-size: 13px;
   line-height: 1.7;
@@ -2388,7 +2391,7 @@ picture {
 }
 
 .mentoria-footer-links a {
-  color: #062b56;
+  color: #0A2A45;
   font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -2397,7 +2400,7 @@ picture {
 }
 
 .mentoria-footer-links a:hover {
-  color: #b83a3a;
+  color: #B51111;
 }
 
 .mentoria-footer-bottom {
@@ -2443,7 +2446,7 @@ picture {
 }
 
 .mentoria-footer-social > span {
-  color: #b83a3a;
+  color: #B51111;
   font-family: "Inter", sans-serif;
   font-size: 10px;
   font-weight: 600;
@@ -2457,7 +2460,7 @@ picture {
 }
 
 .mentoria-social-links a {
-  color: #062b56;
+  color: #0A2A45;
   font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -2526,47 +2529,63 @@ picture {
 
 .sobre-page {
   width: 100%;
-  background: #f5f3ef;
+  min-height: 100vh;
+  background: #FFFDF8;
+  overflow-x: hidden;
 }
 
-.sobre-hero {
-  width: 100%;
-}
-
-/* BANNER INTEIRO */
+/* =========================
+   HERO
+========================= */
 
 .sobre-banner {
-  width: 100%;
-  display: block;
   position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  line-height: 0;
+  background: #FFFDF8;
 }
 
-.sobre-banner img {
+.banner-sobre-image {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-/* DEGRADÊ ENTRE BANNER E BACKGROUND */
-
-.sobre-banner::after {
-  content: "";
+.banner-sobre-gradient {
   position: absolute;
+  z-index: 5;
   left: 0;
   right: 0;
   bottom: 0;
-
-  height: 140px;
+  height: 180px;
+  pointer-events: none;
 
   background: linear-gradient(
     to bottom,
     rgba(245, 243, 239, 0) 0%,
-    rgba(245, 243, 239, 0.35) 45%,
-    #f5f3ef 100%
+    rgba(245, 243, 239, 0.15) 30%,
+    rgba(245, 243, 239, 0.65) 70%,
+    #FFFDF8 100%
   );
+}
 
-  pointer-events: none;
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .sobre-banner {
+    height: 400px;
+  }
+
+  .banner-sobre-image {
+    object-position: center center;
+  }
 }
 
 /* TEXTO */
@@ -2608,25 +2627,7 @@ picture {
 }
 
 /* MOBILE */
-
 @media (max-width: 768px) {
-
-  .sobre-banner img {
-    width: 100%;
-    height: auto;
-  }
-
-  .sobre-banner::after {
-    height: 100px;
-
-    background: linear-gradient(
-      to bottom,
-      rgba(245, 243, 239, 0) 0%,
-      rgba(245, 243, 239, 0.4) 45%,
-      #f5f3ef 100%
-    );
-  }
-
   .sobre-hero-content {
     width: calc(100% - 40px);
 
@@ -2713,7 +2714,7 @@ picture {
 
   overflow: hidden;
 
-  background: #ddd;
+  background: #FFFDF8;
 
   border-radius: 4px;
 
@@ -2797,7 +2798,7 @@ picture {
 ======================================== */
 
 .sobre-historia-card {
-  background: #ffffff;
+  background: #F8FBFF;
 
   padding: 55px 50px;
 
@@ -2864,7 +2865,7 @@ picture {
 
   line-height: 1.75;
 
-  color: #333;
+  color: #0A2A45;
 }
 
 
@@ -2956,144 +2957,11 @@ picture {
 
 .sobre-nascimento {
   width: 100%;
-
-  padding: 120px 40px 150px;
-
-  background: #ebe8e1;
-}
-
-
-.sobre-nascimento-conteudo {
-  width: min(900px, 100%);
-
-  margin: 0 auto;
-
-  text-align: center;
-}
-
-
-/* PEQUENO TÍTULO */
-
-.sobre-nascimento-tag {
-  display: block;
-
-  margin-bottom: 28px;
-
-  font-size: 12px;
-
-  font-weight: 600;
-
-  letter-spacing: 2.5px;
-
-  opacity: 0.55;
-}
-
-
-/* TÍTULO */
-
-.sobre-nascimento h2 {
-  margin: 0 0 55px;
-
-  font-size: clamp(48px, 6vw, 78px);
-
-  line-height: 0.98;
-
-  font-weight: 500;
-
-  letter-spacing: -2.5px;
-}
-
-
-/* TEXTO */
-
-.sobre-nascimento-texto {
-  width: min(650px, 100%);
-
-  margin: 0 auto;
-}
-
-
-.sobre-nascimento-texto p {
-  margin: 0 0 28px;
-
-  font-size: 18px;
-
-  line-height: 1.7;
-
-  color: #333;
-}
-
-
-/* FRASE DE DESTAQUE */
-
-.sobre-nascimento-destaque {
-  margin: 45px 0 !important;
-
-  font-size: clamp(28px, 4vw, 42px) !important;
-
-  line-height: 1.15 !important;
-
-  font-weight: 500;
-
-  letter-spacing: -1px;
-
-  color: #123B5D !important;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-  .sobre-nascimento {
-    padding: 80px 25px 100px;
-  }
-
-
-  .sobre-nascimento-tag {
-    font-size: 10px;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 22px;
-  }
-
-
-  .sobre-nascimento h2 {
-    font-size: clamp(42px, 12vw, 58px);
-
-    letter-spacing: -1.5px;
-
-    margin-bottom: 40px;
-  }
-
-
-  .sobre-nascimento-texto p {
-    font-size: 16px;
-
-    line-height: 1.65;
-  }
-
-
-  .sobre-nascimento-destaque {
-    font-size: 30px !important;
-
-    margin: 35px 0 !important;
-  }
-
-}
-/* ========================================
-   NASCIMENTO DA ROTTA
-   VERSÃO AJUSTADA
-======================================== */
-
-.sobre-nascimento {
-  width: 100%;
   box-sizing: border-box;
 
   padding: 110px 40px 130px;
 
-  background: #ebe8e1;
+  background: #FFFDF8;
 }
 
 
@@ -3158,6 +3026,8 @@ picture {
   margin: 0 auto;
 
   padding: 0;
+
+  color: #123B5D;
 }
 
 
@@ -3180,7 +3050,7 @@ picture {
 
   text-align: center;
 
-  color: #333;
+  color: #0A2A45;
 }
 
 
@@ -3278,7 +3148,7 @@ picture {
 
   padding: 140px 40px;
 
-  background: #123B5D;
+  background: #0A2A45;
 
   box-sizing: border-box;
 }
@@ -3314,7 +3184,7 @@ picture {
 
   letter-spacing: 2.5px;
 
-  color: #F4F0E7;
+  color: #F8FBFF;
 
   opacity: 0.55;
 }
@@ -3333,7 +3203,7 @@ picture {
 
   letter-spacing: -2px;
 
-  color: #ffffff;
+  color: #F8FBFF;
 }
 
 
@@ -3350,7 +3220,7 @@ picture {
 
   font-weight: 400;
 
-  color: #F4F0E7;
+  color: #F8FBFF;
 
   opacity: 0.72;
 }
@@ -3369,9 +3239,9 @@ picture {
 
   padding: 17px 25px;
 
-  background: #ffffff;
+  background: #F8FBFF;
 
-  color: #123B5D;
+  color: #0A2A45;
 
   text-decoration: none;
 
@@ -3465,8 +3335,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "DM Sans", sans-serif;
-  background: #ffffff;
-  color: #123B5D;
+  background: #F8FBFF;
+  color: #0A2A45;
 }
 
 button,
@@ -3480,7 +3350,7 @@ a {
 
 
 /* =====================================================
-   PÁGINA
+   PÁGINA FAQ
 ===================================================== */
 
 .faq-page {
@@ -3504,7 +3374,7 @@ a {
   position: relative;
   width: 100%;
   padding: 100px 0 90px;
-  background: #f5f5f3;
+  background: #FFFDF8;
   overflow: hidden;
 }
 
@@ -3558,7 +3428,7 @@ a {
   padding: 15px 22px;
 
   background: #123B5D;
-  color: #ffffff;
+  color: #F8FBFF;
 
   font-size: 14px;
   font-weight: 600;
@@ -3589,7 +3459,7 @@ a {
   right: 5%;
   top: 15%;
 
-  border: 1px solid #d5d5d2;
+  border: 1px solid #F8FBFF;
   border-radius: 50%;
 }
 
@@ -3600,7 +3470,7 @@ a {
   right: 15%;
   bottom: 10%;
 
-  border: 1px solid #d5d5d2;
+  border: 1px solid #F8FBFF;
   border-radius: 50%;
 }
 
@@ -3612,7 +3482,7 @@ a {
 .faq-intro {
   width: 100%;
   padding: 90px 0;
-  background: #ffffff;
+  background: #FFFDF8;
 }
 
 .intro-grid {
@@ -3674,7 +3544,7 @@ a {
   display: block;
   width: 100%;
   padding: 80px 0;
-  background: #f8f8f7;
+  background: #123B5D;
 }
 
 .faq-section > .faq-container {
@@ -3693,6 +3563,7 @@ a {
 
   margin: 0 0 70px !important;
   padding: 0 !important;
+  color: #F8FBFF;
 }
 
 
@@ -3707,6 +3578,7 @@ a {
 
   margin: 0 0 25px !important;
   padding: 0 !important;
+  color: #F8FBFF;
 }
 
 .category-heading span {
@@ -3717,6 +3589,7 @@ a {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
+  color: #B51111;
 }
 
 .category-heading h3 {
@@ -3731,6 +3604,7 @@ a {
   font-size: 34px;
   font-weight: 600;
   line-height: 1.05;
+  color: #F8FBFF;
 }
 
 
@@ -3746,7 +3620,7 @@ a {
   margin: 0 !important;
   padding: 0 !important;
 
-  border-top: 1px solid #d8d8d5;
+  border-top: 1px solid #F8FBFF;
 }
 
 
@@ -3762,7 +3636,7 @@ a {
   margin: 0 !important;
   padding: 0 !important;
 
-  border-bottom: 1px solid #d8d8d5;
+  border-bottom: 1px solid #F8FBFF;
 }
 
 
@@ -3794,6 +3668,7 @@ a {
   cursor: pointer;
 
   text-align: left;
+  color: #F8FBFF;
 }
 
 
@@ -3816,6 +3691,8 @@ a {
   line-height: 1.5;
 
   text-align: left;
+
+  color: #F8FBFF;
 }
 
 
@@ -3837,7 +3714,7 @@ a {
   margin: 0 !important;
   padding: 0 !important;
 
-  border: 1px solid #bdbdb9;
+  border: 1px solid #F8FBFF;
   border-radius: 50%;
 
   font-size: 20px;
@@ -3869,6 +3746,7 @@ a {
   padding: 0 !important;
 
   overflow: visible !important;
+  color: #F8FBFF;
 }
 
 
@@ -3886,6 +3764,8 @@ a {
   padding: 0 56px 28px 0 !important;
 
   overflow: visible !important;
+
+  color: #F8FBFF;
 }
 
 
@@ -3906,6 +3786,7 @@ a {
   line-height: 1.75;
 
   text-align: left;
+  color: #F8FBFF;
 }
 
 
@@ -3917,7 +3798,7 @@ a {
   display: block;
   width: 100%;
   padding: 80px 0;
-  background: #ffffff;
+  background: #F8FBFF;
 }
 
 .cta-card {
@@ -3930,7 +3811,7 @@ a {
   padding: 60px;
 
   background: #123B5D;
-  color: #ffffff;
+  color: #F8FBFF;
 
   overflow: hidden;
 }
@@ -3944,7 +3825,7 @@ a {
 }
 
 .cta-content .section-label {
-  color: #F4F0E7;
+  color: #F8FBFF;
 }
 
 .cta-content h2 {
@@ -4011,13 +3892,13 @@ a {
 }
 
 .mentoria-button-whatsapp {
-  background: #F4F0E7;
-  color: #123B5D;
+  background: #F8FBFF;
+  color: #0A2A45;
 }
 
 .mentoria-button-checkout {
-  border: 1px solid #F4F0E7;
-  color: #F4F0E7;
+  border: 1px solid #F8FBFF;
+  background: #B51111;
 }
 
 .mentoria-button-whatsapp:hover,
@@ -4378,5 +4259,28 @@ a {
     100% {
       transform: translateY(0);
     }
+  }
+}
+/* =========================================
+   BANNER MENTORIA MOBILE
+========================================= */
+@media (max-width: 768px) {
+  .banner-mentoria {
+    width: 100%;
+    height: auto;
+  }
+}
+/* =========================================
+   METODO ROTTA MENTORIA MOBILE
+========================================= */
+@media (max-width: 768px) {
+  .mentoria-method {
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  .mentoria-method > div {
+    width: 100%;
   }
 }

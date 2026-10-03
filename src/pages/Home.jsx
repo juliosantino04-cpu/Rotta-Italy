@@ -308,12 +308,9 @@ function Home() {
       e acompanhamento de uma forma muito mais próxima.
     </p>
 
-    <a
-      href="/sobre"
-      className="story-home-button"
-    >
-      Conhecer minha história →
-    </a>
+    <NavLink to="/sobre">
+  Conhecer minha história →
+</NavLink>
 
   </div>
 
@@ -573,6 +570,22 @@ function Home() {
       </a>
 
     </div>
+    <div className="mentoria-footer-links">
+
+      <a href="/">A Rotta</a>
+
+      <a href="/mentoria">Mentoria</a>
+
+      <a href="/universidades">Universidades</a>
+
+      <a href="/sobre">Sobre</a>
+
+      <a href="/blog">Blog</a>
+
+      <a href="/faq">FAQ</a>
+
+    </div>
+
 
   </div>
 

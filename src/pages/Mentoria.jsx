@@ -103,7 +103,7 @@ function Mentoria() {
     <div className="mentoria-about-photo">
       <img
         src={fotoJs3}
-        alt="João, fundador da Rotta Italy"
+        alt="Julio, fundador da Rotta Italy"
       />
     </div>
 
@@ -330,22 +330,25 @@ function Mentoria() {
       rel="noopener noreferrer"
       aria-label="Instagram"
     >
-      Instagram
+      Instagram ↗
     </a>
 
     <a
-      href="#"
-      aria-label="TikTok"
-    >
-      TikTok
-    </a>
+        href="https://www.tiktok.com/@rotta.italy?_r=1&_t=ZS-99Jwu2Ax2Ie"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TikTok ↗
+      </a>
 
     <a
-      href="#"
-      aria-label="YouTube"
-    >
-      YouTube
-    </a>
+        href="https://youtube.com/@juliosantinoo?si=EZEBXt1cd8h2I-lC"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube ↗
+      </a>
+
 
   </div>
 

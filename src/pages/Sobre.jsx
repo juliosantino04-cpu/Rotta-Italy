@@ -1,22 +1,21 @@
 import "../App.css";
-import banner from "../assets/bannersobre.png" 
+import bannersobre from "../assets/bannersobre.png";
 
 function Sobre() {
   return (
     <main className="sobre-page">
 
-      {/* HERO */}
+      <section className="sobre-banner">
 
-      <section className="sobre-hero">
+        <img
+          src={bannersobre}
+          alt="Sobre Rotta Italy"
+          className="banner-sobre-image"
+        />
 
-        <div className="sobre-banner">
-          <img src={banner} alt="Sobre a Rota" />
-        </div>
+        <div className="banner-sobre-gradient"></div>
 
       </section>
-
-
-      {/* HISTÓRIA */}
 
      {/* HISTÓRIA */}
 
