@@ -1,39 +1,44 @@
-function Universidades() {
+import React from "react";
+import "../App.css";
+import fotoia4 from "../assets/fotoia4.png";
+
+export default function Universidades() {
   return (
     <main className="universidades-page">
+      <section
+        className="universidades-hero"
+        style={{ backgroundImage: `url(${fotoia4})` }}
+      >
+        <div className="universidades-hero-overlay"></div>
 
-      <section className="universidades-hero">
+        <div className="universidades-hero-content">
+          <span className="universidades-hero-tag">
+            ESTUDE NA ITÁLIA
+          </span>
 
-        <span className="section-label">
-          UNIVERSIDADES
-        </span>
+          <h1>
+            Encontre a universidade
+            <br />
+            <span>certa para o seu futuro.</span>
+          </h1>
 
-        <h1>
-          Encontre sua universidade na Itália.
-        </h1>
+          <p>
+            Descubra as melhores universidades da Itália e encontre
+            o curso ideal para transformar seus planos de estudo
+            em uma experiência internacional.
+          </p>
 
-        <p>
-          Conheça universidades italianas e descubra as possibilidades
-          para construir sua jornada acadêmica na Itália.
-        </p>
+          <div className="universidades-hero-buttons">
+            <a href="#universidades" className="btn-primary">
+              Explorar universidades
+            </a>
 
+            <a href="#sobre" className="btn-secondary">
+              Como funciona?
+            </a>
+          </div>
+        </div>
       </section>
-
-      <section className="universidades-content">
-
-        <h2>
-          Explore as universidades
-        </h2>
-
-        <p>
-          Em breve, você poderá encontrar aqui informações sobre
-          universidades, cursos e oportunidades para estudantes internacionais.
-        </p>
-
-      </section>
-
     </main>
-  )
+  );
 }
-
-export default Universidades

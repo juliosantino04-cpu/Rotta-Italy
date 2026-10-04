@@ -4292,3 +4292,1008 @@ background: #FFFDF8;
 .mentoria-support {
 background: #FFFDF8;
 }
+/* =========================================================
+   PAGINA BOLSAS
+========================================================= */
+
+.bolsas-page {
+  width: 100%;
+  overflow: hidden;
+  background: #FFFDF8;
+}
+
+.bolsas-hero {
+  min-height: 680px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  gap: 70px;
+}
+
+.bolsas-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bolsas-hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  background: #FFFDF8;
+  color: #155B43;
+  border: 1px solid #155B43;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+
+  animation: flutuarTag 4s ease-in-out infinite;
+}
+
+.bolsas-hero h1 {
+  margin: 0;
+
+  max-width: 650px;
+
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+}
+
+.bolsas-hero h1 span {
+  display: block;
+}
+
+.bolsas-hero p {
+  max-width: 580px;
+
+  margin: 28px 0;
+
+  color: #626b7a;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.bolsas-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.bolsas-hero-buttons button {
+  border: none;
+  border-radius: 12px;
+
+  padding: 15px 24px;
+
+  background: #155B43;
+  color: #F8FBFF;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.bolsas-hero-buttons button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.bolsas-hero-buttons .btn-secundario {
+  background: #F8FBFF;
+  color: #155B43;
+  border: 1px solid #155B43;
+}
+
+.bolsas-hero-visual {
+  display: flex;
+  justify-content: center;
+
+  animation: flutuarImagem 5s ease-in-out infinite;
+}
+
+.bolsas-hero-visual img {
+  width: 100%;
+  max-width: 500px;
+  height: 560px;
+
+  object-fit: cover;
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   LISTA DE BOLSAS
+========================================================= */
+
+.bolsas-lista {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 100px 30px;
+}
+
+.bolsas-lista-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 45px;
+}
+
+.bolsas-lista-header h2,
+.como-funciona h2 {
+  margin: 0;
+
+  font-size: clamp(34px, 5vw, 52px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+  color: #123B5D;
+}
+
+.bolsas-lista-header p {
+  max-width: 650px;
+
+  margin-top: 15px;
+
+  color: #073324;
+
+  line-height: 1.6;
+}
+
+.bolsas-contador {
+  white-space: nowrap;
+
+  padding: 12px 18px;
+
+  border: 1px solid #123B5D;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #123B5D;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.bolsas-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* =========================================================
+   CARD NORMAL
+========================================================= */
+
+.bolsa-card {
+  position: relative;
+
+  min-height: 510px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 26px;
+
+  border: 1px solid #e8ebf0;
+
+  border-radius: 22px;
+
+  background: #F8FBFF;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.bolsa-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.bolsa-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-bottom: 22px;
+}
+
+.bolsa-tipo {
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #155B43;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.bolsa-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 22px;
+
+  line-height: 1.25;
+  color: #0A2A45;
+}
+
+.bolsa-descricao {
+  min-height: 82px;
+
+  margin: 0 0 22px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.bolsa-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.bolsa-info div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.bolsa-info span {
+  font-size: 11px;
+
+  color: #123B5D;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+
+  font-weight: 600;
+}
+
+.bolsa-info strong {
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  color: #123B5D;
+}
+
+.bolsa-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: auto;
+
+  padding-top: 25px;
+}
+
+.bolsa-card-footer small {
+  color: #123B5D;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+.bolsa-card-footer a {
+  color: #123B5D;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+.bolsa-card-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   CARD BLOQUEADO
+========================================================= */
+
+.bolsa-unlock-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid #F8FBFF;
+
+  background:
+    linear-gradient(
+      145deg,
+      #F8FBFF,
+      #F8FBFF
+    );
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.bolsa-unlock-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 25px 60px rgba(49, 85, 198, 0.14);
+}
+
+
+/* Conteúdo falso atrás */
+
+.bolsa-unlock-blur {
+  position: absolute;
+
+  inset: 0;
+
+  padding: 35px;
+
+  opacity: 0.25;
+
+  filter: blur(5px);
+
+  transform: scale(1.05);
+}
+
+.fake-line {
+  width: 75%;
+  height: 13px;
+
+  margin-bottom: 13px;
+
+  border-radius: 20px;
+
+  background: #F8FBFF;
+}
+
+.fake-line.large {
+  width: 90%;
+  height: 24px;
+}
+
+.fake-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin-top: 35px;
+}
+
+.fake-info span {
+  display: block;
+
+  width: 100%;
+  height: 55px;
+
+  border-radius: 12px;
+
+  background: #F8FBFF;
+}
+
+
+/* Conteúdo real */
+
+.bolsa-unlock-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 310px;
+
+  margin: auto;
+}
+
+.bolsa-lock-icon {
+  width: 54px;
+  height: 54px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #F8FBFF;
+
+  box-shadow:
+    0 10px 25px rgba(49, 85, 198, 0.12);
+
+  font-size: 22px;
+}
+
+.unlock-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  color: #123B5D;
+}
+
+.bolsa-unlock-content h3 {
+  margin-bottom: 15px;
+
+  font-size: 24px;
+
+  line-height: 1.2;
+}
+
+.bolsa-unlock-content p {
+  margin-bottom: 24px;
+
+  color: #626b7a;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.unlock-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 18px;
+
+  border-radius: 12px;
+
+  background: #123B5D;
+  color: #F8FBFF;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.unlock-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   COMO FUNCIONA
+========================================================= */
+
+.como-funciona {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 80px 30px 120px;
+}
+
+.como-funciona > h2 {
+  max-width: 700px;
+
+  margin-bottom: 50px;
+}
+
+.como-funciona-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 50px;
+}
+
+.como-funciona-grid > div {
+  border-top: 1px solid #F8FBFF;
+
+  padding-top: 25px;
+}
+
+.como-funciona-grid span {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #B51111;
+}
+
+.como-funciona-grid h3 {
+  margin: 15px 0 10px;
+
+  font-size: 20px;
+}
+
+.como-funciona-grid p {
+  color: #123B5D;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+/* =========================================================
+   CTA MENTORIA
+========================================================= */
+
+.bolsas-mentoria {
+  width: 100%;
+
+  padding: 130px 30px;
+
+  background: #0A2A45;
+
+  color: #F8FBFF;
+
+  text-align: center;
+}
+
+.bolsas-mentoria-content {
+  max-width: 780px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.mentoria-label {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: #B51111;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.bolsas-mentoria h2 {
+  max-width: 760px;
+
+  margin: 0;
+
+  font-size: clamp(40px, 5vw, 64px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2.5px;
+}
+
+.bolsas-mentoria h2 span {
+  display: block;
+}
+
+.bolsas-mentoria p {
+  max-width: 650px;
+
+  margin: 28px auto 34px;
+
+  color: #F8FBFF;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+.mentoria-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 26px;
+
+  border-radius: 13px;
+
+  background: #B51111;
+  color: #F8FBFF;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.mentoria-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .bolsas-hero {
+    grid-template-columns: 1fr;
+
+    padding-top: 60px;
+  }
+
+  .bolsas-hero-visual {
+    order: -1;
+  }
+
+  .bolsas-hero-visual img {
+    max-width: 450px;
+
+    height: 420px;
+  }
+
+  .bolsas-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .como-funciona-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .bolsas-hero {
+    padding:
+      50px 20px;
+  }
+
+  .bolsas-hero h1 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+  .bolsas-hero p {
+    font-size: 16px;
+  }
+
+  .bolsas-hero-visual img {
+    height: 350px;
+
+    border-radius: 22px;
+  }
+
+  .bolsas-lista {
+    padding:
+      70px 20px;
+  }
+
+  .bolsas-lista-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .bolsas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bolsa-card {
+    min-height: auto;
+  }
+
+  .bolsa-unlock-card {
+    min-height: 500px;
+  }
+
+  .como-funciona {
+    padding:
+      60px 20px 80px;
+  }
+
+  .bolsas-mentoria {
+    padding:
+      90px 20px;
+  }
+
+  .bolsas-mentoria h2 {
+    font-size: 40px;
+  }
+
+}
+/* =========================================
+   PÁGINA UNIVERSIDADES
+========================================= */
+
+.universidades-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.universidades-hero {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Escurece a imagem para melhorar a leitura */
+.universidades-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 18, 28, 0.88) 0%,
+      rgba(8, 18, 28, 0.68) 40%,
+      rgba(8, 18, 28, 0.25) 75%,
+      rgba(8, 18, 28, 0.15) 100%
+    );
+}
+
+/* Conteúdo */
+
+.universidades-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(1200px, 90%);
+  margin: 0 auto;
+
+  padding: 100px 0 140px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.universidades-hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 24px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  color: #F8FBFF;
+}
+
+.universidades-hero-tag::before {
+  content: "";
+
+  width: 32px;
+  height: 2px;
+
+  margin-right: 12px;
+
+  background: #B51111;
+}
+
+.universidades-hero h1 {
+  display: block;
+
+  max-width: 800px;
+
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  font-weight: 700;
+
+  color: #F8FBFF;
+}
+
+.universidades-hero h1 span {
+  display: block;
+  color: #B51111;
+}
+
+.universidades-hero p {
+  max-width: 620px;
+
+  margin: 30px 0 36px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.universidades-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  flex-wrap: wrap;
+}
+
+.universidades-hero-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+  padding: 0 26px;
+
+  border-radius: 4px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.btn-primary {
+  background: #B51111;
+  color: #F8FBFF;
+
+  box-shadow: 0 10px 30px rgba(181, 17, 17, 0.25);
+}
+
+.btn-primary:hover {
+  background: #B51111;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  color: #F8FBFF;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover {
+  background: #F8FBFF;
+  color: #0A2A45;
+
+  transform: translateY(-2px);
+}
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 768px) {
+  .universidades-hero {
+    min-height: 85vh;
+
+    background-position: 60% center;
+  }
+
+  .universidades-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 18, 28, 0.9) 0%,
+        rgba(8, 18, 28, 0.72) 65%,
+        rgba(8, 18, 28, 0.45) 100%
+      );
+  }
+
+  .universidades-hero-content {
+    padding: 80px 0 120px;
+  }
+
+  .universidades-hero h1 {
+    font-size: clamp(42px, 12vw, 62px);
+    letter-spacing: -2px;
+  }
+
+  .universidades-hero p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .universidades-hero-bottom {
+    bottom: 22px;
+  }
+
+  .universidades-hero-bottom span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .universidades-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .universidades-hero-buttons a {
+    width: 100%;
+  }
+
+  .universidades-hero-content {
+    width: 88%;
+  }
+}
