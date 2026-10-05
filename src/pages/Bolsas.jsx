@@ -1,6 +1,6 @@
 import "../App.css";
 import fotoia3 from "../assets/fotoia3.png";
-import { bolsas } from "../data/bolsasData";
+import { bolsas } from "../src/data/bolsasData";
 
 function Bolsas() {
   // Mostramos somente uma pequena seleção pública.
