@@ -8,6 +8,7 @@ import Mentoria from "./pages/Mentoria"
 import Bolsas from "./pages/Bolsas"
 import Universidades from "./pages/Universidades"
 import Sobre from "./pages/Sobre"
+import Produtos from "./pages/Produtos"
 import Blog from "./pages/Blog"
 import FAQ from "./pages/FAQ"
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/bolsas" element={<Bolsas />} />
         <Route path="/universidades" element={<Universidades />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/produtos" element={<Produtos />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>

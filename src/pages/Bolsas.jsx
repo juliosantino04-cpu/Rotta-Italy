@@ -1,6 +1,8 @@
 import "../App.css";
 import fotoia3 from "../assets/fotoia3.png";
 import { bolsas } from "../data/bolsasdata";
+import { NavLink } from "react-router-dom"
+
 
 function Bolsas() {
   // Mostramos somente uma pequena seleção pública.
@@ -326,12 +328,12 @@ function Bolsas() {
       os próximos passos para estudar na Itália.
     </p>
 
-    <a
-      href="#contato"
-      className="mentoria-button"
-    >
-      Quero conhecer a mentoria →
-    </a>
+    <NavLink
+  to="/mentoria"
+  className="mentoria-button"
+>
+  Conhecer a mentoria →
+</NavLink>
 
   </div>
 </section>

@@ -75,6 +75,10 @@ function Header() {
             Sobre
           </NavLink>
 
+           <NavLink to="/Produtos" onClick={() => setMenuOpen(false)}>
+            Produtos
+          </NavLink>
+
           <NavLink to="/blog" onClick={() => setMenuOpen(false)}>
             Blog
           </NavLink>
@@ -82,6 +86,7 @@ function Header() {
           <NavLink to="/faq" onClick={() => setMenuOpen(false)}>
             FAQ
           </NavLink>
+         
 
         </nav>
 

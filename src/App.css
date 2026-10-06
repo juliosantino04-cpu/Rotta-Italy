@@ -4264,31 +4264,61 @@ a {
 /* =========================================
    BANNER MENTORIA MOBILE
 ========================================= */
-@media (max-width: 768px) {
-  .banner-mentoria {
+@media (max-width: 600px) {
+  .mentoria-banner {
+    height: 300px;
+  }
+
+  .mentoria-banner-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .mentoria-banner-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.5)
+    );
   }
 }
 /* =========================================
    METODO ROTTA MENTORIA MOBILE
 ========================================= */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .mentoria-method {
-    width: 100%;
-    padding: 30px 20px;
-    box-sizing: border-box;
+    padding: 50px 20px;
   }
 
-  .mentoria-method > div {
+  .mentoria-method h2 {
+    margin-bottom: 35px;
+    font-size: 28px;
+  }
+
+  .mentoria-steps {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .mentoria-steps article {
     width: 100%;
   }
-}
-.mentoria-method {
-background: #FFFDF8;
-}
-.mentoria-support {
-background: #FFFDF8;
+
+  .mentoria-steps span {
+    margin-bottom: 10px;
+  }
+
+  .mentoria-steps h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .mentoria-steps p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
 }
 /* =========================================================
    PAGINA BOLSAS
@@ -5073,6 +5103,7 @@ background: #FFFDF8;
 .universidades-page {
   width: 100%;
   min-height: 100vh;
+  background: #FFFDF8;
 }
 
 /* =========================================
@@ -5294,4 +5325,1385 @@ background: #FFFDF8;
   .universidades-hero-content {
     width: 88%;
   }
+}
+/* =========================================
+   INTRO UNIVERSIDADES 
+========================================= */
+
+.universidades-intro p {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #0A2A45;
+}
+
+.universidades-intro p + p {
+  margin-top: 28px;
+}
+
+.universidades-section-tag {
+  color: #B51111;
+}
+
+.universidades-intro h2 {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.08;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+
+.universidades-intro p {
+  max-width: 680px;
+  margin: 0 auto 15px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #0A2A45;
+}
+
+
+/* =========================================
+   EXPLORE UNIVERSIDADES
+========================================= */
+
+.universidades-explore-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 55px;
+}
+
+.universidades-explore-header > p {
+  max-width: 650px;
+  color: #0A2A45;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.universidades-explore-header h2 {
+  font-size: clamp(36px, 4vw, 55px);
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0;
+}
+
+.universidades-explore-header > p {
+  max-width: 400px;
+  color: #0A2A45;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/* =========================================
+   CARDS UNIVERSIDADES
+========================================= */
+
+.universidades-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.universidade-card {
+  min-height: 300px;
+  padding: 35px;
+  background: #F8FBFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.universidade-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.universidade-card-number {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #B51111;
+}
+
+.universidade-card span:not(.universidade-card-link) {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  color: #650303;
+  margin-bottom: 10px;
+}
+
+.universidade-card h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+.universidade-card p {
+  max-width: 450px;
+  color: #0A2A45;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.universidade-card-link {
+  margin-top: 30px;
+  color: #B51111;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.universidade-card-featured {
+  background: #650303;
+  color: #F8FBFF;
+}
+
+.universidade-card-featured p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.universidade-card-featured .universidade-card-number,
+.universidade-card-featured .universidade-card-link {
+  color: #F8FBFF;
+}
+
+
+/* =========================================
+   CTA UNIVERSIDADES P MENTORIA
+========================================= */
+
+.universidades-cta {
+  padding: 130px 25px;
+  background: #123B5D;
+  color: #F8FBFF;
+  text-align: center;
+}
+
+.universidades-cta-content {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.universidades-cta .universidades-section-tag {
+  color: #0A2A45;
+  margin-bottom: 20px;
+}
+
+.universidades-cta h2 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+
+.universidades-cta p {
+  max-width: 620px;
+  margin: 0 0 40px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  font-size: 17px;
+  text-align: center;
+}
+
+.universidades-cta-button {
+  display: inline-block;
+  padding: 17px 30px;
+  background: #B51111;
+  color: #F8FBFF;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+
+  .universidades-intro {
+    padding: 80px 25px;
+  }
+
+  .universidades-intro h2 {
+    font-size: 36px;
+  }
+
+  .universidades-intro h2 br {
+    display: none;
+  }
+
+
+  .universidades-explore {
+    padding: 75px 20px;
+  }
+
+  .universidades-explore-header {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .universidades-explore-header h2 {
+    font-size: 38px;
+  }
+
+  .universidades-explore-header h2 br {
+    display: none;
+  }
+
+  .universidades-explore-header > p {
+    margin-top: 25px;
+  }
+
+
+  .universidades-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .universidade-card {
+    min-height: 280px;
+    padding: 28px;
+  }
+
+  .universidade-card h3 {
+    font-size: 25px;
+  }
+
+
+  .universidades-cta {
+    padding: 90px 25px;
+  }
+
+  .universidades-cta h2 {
+    font-size: 40px;
+  }
+
+  .universidades-cta h2 br {
+    display: none;
+  }
+
+}
+/* =========================================
+   PRODUTOS PAGINA
+========================================= */
+
+.produtos-page {
+  width: 100%;
+  overflow: hidden;
+  background: #FFFDF8;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.produtos-hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 25px;
+  box-sizing: border-box;
+  background: #155B43;
+  text-align: center;
+}
+
+.produtos-hero-content {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produtos-section-tag {
+  display: block;
+  color: #0A2A45;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.produtos-hero h1 {
+  font-size: clamp(45px, 6vw, 75px);
+  line-height: 1.02;
+  font-weight: 500;
+  margin: 0 0 35px;
+  color: #F8FBFF;
+}
+
+.produtos-hero h1 span {
+  color: #F8FBFF;
+}
+
+.produtos-hero p {
+  max-width: 650px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #F8FBFF;
+}
+
+
+/* =========================================
+   MENTORIA
+========================================= */
+
+.produto-mentoria {
+  padding: 120px 7%;
+}
+
+.produto-mentoria-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  margin-bottom: 60px;
+}
+
+.produto-mentoria-header h2 {
+  font-size: clamp(45px, 5vw, 65px);
+  line-height: 1;
+  font-weight: 500;
+  margin: 0;
+}
+
+.produto-mentoria-header h2 span {
+  color: #0A2A45;
+}
+
+.produto-mentoria-intro {
+  max-width: 650px;
+}
+
+.produto-mentoria-intro p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #0A2A45;
+  margin: 0;
+}
+
+
+/* =========================================
+   CARD PRINCIPAL — MENTORIA
+========================================= */
+
+.mentoria-produto-card {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: block !important;
+
+  background: #155B43;
+  color: #F8FBFF;
+
+  padding: 60px;
+}
+
+
+/* =========================================
+   TOPO DO CARD
+   TÍTULO
+   ↓
+   TEXTO
+========================================= */
+
+.mentoria-produto-top {
+  width: 100% !important;
+  box-sizing: border-box;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+
+  gap: 28px;
+
+  padding: 0 0 55px !important;
+  margin: 0 !important;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Tudo dentro do topo ocupa a largura inteira */
+.mentoria-produto-top > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Badge */
+
+.mentoria-badge {
+  display: block;
+
+  width: fit-content;
+
+  color: #0A2A45;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  margin: 0 0 20px;
+}
+
+
+/* Título */
+
+.mentoria-produto-top h3 {
+  display: block;
+
+  width: 100%;
+
+  font-size: clamp(38px, 4.5vw, 58px);
+
+  line-height: 1.04;
+
+  font-weight: 500;
+
+  margin: 0;
+}
+
+
+/* Texto que fica abaixo do título */
+
+.mentoria-produto-top p {
+  display: block;
+
+  width: 100%;
+  max-width: 650px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 17px;
+
+  line-height: 1.75;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   BENEFÍCIOS
+   IMPORTANTE:
+   FICAM ABAIXO DO TOPO
+========================================= */
+
+.mentoria-beneficios {
+  width: 100% !important;
+
+  box-sizing: border-box;
+
+  display: grid !important;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+  column-gap: 40px !important;
+
+  row-gap: 0 !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+}
+
+
+/* Cada benefício */
+
+.mentoria-beneficios .beneficio {
+  width: 100% !important;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+
+  gap: 12px;
+
+  padding: 35px 0 !important;
+
+  margin: 0 !important;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Número */
+
+.mentoria-beneficios .beneficio > span {
+  display: block;
+
+  color: #123B5D;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+
+/* Título */
+
+.mentoria-beneficios .beneficio h4 {
+  display: block;
+
+  width: 100%;
+
+  color: #F8FBFF;
+
+  font-size: 20px;
+
+  line-height: 1.2;
+
+  font-weight: 500;
+
+  margin: 0 0 8px;
+}
+
+
+/* Texto */
+
+.mentoria-beneficios .beneficio p {
+  display: block;
+
+  width: 100%;
+
+  max-width: 100%;
+
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   FINAL
+   TEXTO
+   ↓
+   BOTÃO
+   ↓
+   BOTÃO
+========================================= */
+
+.mentoria-produto-bottom {
+  width: 100% !important;
+
+  box-sizing: border-box;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+
+  gap: 25px;
+
+  padding: 50px 0 0 !important;
+
+  margin: 0 !important;
+
+  border: 0 !important;
+}
+
+
+/* Texto final */
+
+.mentoria-produto-bottom p {
+  width: 100%;
+
+  max-width: 650px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.mentoria-produto-buttons {
+  width: 100%;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+
+  gap: 14px;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+
+.mentoria-produto-buttons a {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  min-height: 54px;
+
+  padding: 16px 30px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Botão principal */
+
+.mentoria-produto-buttons .btn-mentoria-primary {
+  background: #B51111;
+
+  color: #F8FBFF;
+
+}
+
+
+.mentoria-produto-buttons .btn-mentoria-primary:hover {
+  transform: translateY(-3px);
+
+  background: #073324;
+}
+
+
+/* Botão secundário */
+
+.mentoria-produto-buttons .btn-mentoria-secondary {
+  background: transparent;
+
+  color: #F8FBFF;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.mentoria-produto-buttons .btn-mentoria-secondary:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .mentoria-produto-card {
+    padding: 50px 40px;
+  }
+
+  .mentoria-beneficios {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    column-gap: 30px !important;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .mentoria-produto-card {
+    padding: 35px 25px;
+  }
+
+  .mentoria-produto-top {
+    gap: 25px;
+
+    padding-bottom: 40px !important;
+  }
+
+  .mentoria-produto-top h3 {
+    font-size: 38px;
+
+    line-height: 1.05;
+  }
+
+  .mentoria-produto-top p {
+    font-size: 15px;
+  }
+
+  .mentoria-beneficios {
+    grid-template-columns: 1fr !important;
+
+    column-gap: 0 !important;
+  }
+
+  .mentoria-beneficios .beneficio {
+    padding: 30px 0 !important;
+  }
+
+  .mentoria-beneficios .beneficio h4 {
+    font-size: 19px;
+  }
+
+  .mentoria-produto-bottom {
+    padding-top: 40px !important;
+  }
+
+  .mentoria-produto-buttons {
+    width: 100%;
+  }
+
+  .mentoria-produto-buttons a {
+    width: 100%;
+
+    text-align: center;
+  }
+
+}
+
+/* =========================================
+   OUTROS PRODUTOS
+========================================= */
+
+.outros-produtos {
+  background: #FFFDF8;
+  padding: 120px 7%;
+}
+
+.outros-produtos-header {
+  max-width: 750px;
+  margin-bottom: 65px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.outros-produtos-header .produtos-section-tag {
+  margin-bottom: 22px;
+}
+
+.outros-produtos-header h2 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0 0 30px;
+  color: #0A2A45;
+}
+
+.outros-produtos-header p {
+  color: #0A2A45;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0;
+}
+
+
+/* =========================================
+   CARDS DOS PRODUTOS
+========================================= */
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.produto-card {
+  background: #F8FBFF;
+  padding: 40px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.produto-card-number {
+  color: #073324;
+  font-size: 14px;
+  margin-bottom: 55px;
+}
+
+.produto-card-content > span {
+  display: block;
+  color: #073324;
+  font-size: 11px;
+  letter-spacing: 1.7px;
+  margin-bottom: 12px;
+}
+
+.produto-card h3 {
+  font-size: 32px;
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0 0 25px;
+}
+
+.produto-card-content > p {
+  color: #073324;
+  line-height: 1.7;
+  max-width: 500px;
+  margin: 0;
+}
+
+.produto-card ul {
+  padding: 0;
+  margin: 30px 0 0;
+  list-style: none;
+}
+
+.produto-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid #F8FBFF;
+  font-size: 14px;
+  color: #073324;
+}
+
+
+/* =========================================
+   CTA DOS CARDS
+========================================= */
+
+.produto-card-footer {
+  margin-top: auto;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.produto-card-footer > div {
+  display: none;
+}
+
+.produto-card-footer a {
+  display: inline-block;
+  color: #F8FBFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   QUAL ESCOLHER
+========================================= */
+
+.produtos-escolha {
+  padding: 130px 25px;
+  text-align: center;
+}
+
+.produtos-escolha-content {
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produtos-escolha h2 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0 0 65px;
+}
+
+.escolha-lista {
+  width: 100%;
+  border-top: 1px solid #073324;
+  text-align: left;
+}
+
+.escolha-lista div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 28px 0;
+  border-bottom: 1px solid #073324;
+}
+
+.escolha-lista strong {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.escolha-lista span {
+  color: #650303;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   CTA FINAL
+========================================= */
+
+.produtos-cta {
+  padding: 140px 25px;
+  background: #073324;
+  color: #F8FBFF;
+  text-align: center;
+}
+
+.produtos-cta-content {
+  max-width: 760px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produtos-cta .produtos-section-tag {
+  color: #F8FBFF;
+}
+
+.produtos-cta h2 {
+  font-size: clamp(40px, 5vw, 62px);
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0 0 35px;
+}
+
+.produtos-cta p {
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  margin: 0 0 45px;
+  font-size: 17px;
+}
+
+.produtos-cta a {
+  display: inline-block;
+  padding: 18px 32px;
+  background: #B51111;
+  color: #F8FBFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .produtos-hero {
+    min-height: 600px;
+    padding: 80px 25px;
+  }
+
+  .produtos-hero h1 {
+    font-size: 43px;
+  }
+
+  .produtos-hero h1 br {
+    display: none;
+  }
+
+  .produtos-hero p {
+    font-size: 15px;
+  }
+
+
+  .produto-mentoria {
+    padding: 85px 20px;
+  }
+
+  .produto-mentoria-header {
+    gap: 30px;
+    margin-bottom: 45px;
+  }
+
+  .produto-mentoria-header h2 {
+    font-size: 45px;
+  }
+
+  .produto-mentoria-intro {
+    max-width: 100%;
+  }
+
+  .produto-mentoria-intro p {
+    font-size: 16px;
+  }
+
+
+  .mentoria-produto-card {
+    padding: 35px 25px;
+  }
+
+  .mentoria-produto-top {
+    gap: 25px;
+  }
+
+  .mentoria-produto-top h3 {
+    font-size: 38px;
+  }
+
+  .mentoria-beneficios {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficio {
+    padding: 30px 0;
+  }
+
+  .beneficio h4 {
+    font-size: 19px;
+  }
+
+  .mentoria-produto-bottom {
+    padding-top: 40px;
+  }
+
+  .mentoria-produto-bottom a {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+
+  .outros-produtos {
+    padding: 85px 20px;
+  }
+
+  .outros-produtos-header {
+    margin-bottom: 45px;
+  }
+
+  .outros-produtos-header h2 {
+    font-size: 40px;
+  }
+
+  .produtos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .produto-card {
+    min-height: 500px;
+    padding: 30px;
+  }
+
+  .produto-card-number {
+    margin-bottom: 40px;
+  }
+
+  .produto-card h3 {
+    font-size: 30px;
+  }
+
+  .produto-card-footer {
+    margin-top: 40px;
+  }
+
+
+  .produtos-escolha {
+    padding: 90px 25px;
+  }
+
+  .produtos-escolha h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .escolha-lista div {
+    padding: 25px 0;
+  }
+
+
+  .produtos-cta {
+    padding: 95px 25px;
+  }
+
+  .produtos-cta h2 {
+    font-size: 40px;
+  }
+
+  .produtos-cta h2 br {
+    display: none;
+  }
+
+  .produtos-cta p {
+    font-size: 15px;
+  }
+
+}
+/* =====================================================
+   CAPA DA MENTORIA — 1080 x 300
+===================================================== */
+
+.mentoria-capa {
+  width: calc(100% + 120px);
+  margin: -60px -60px 55px;
+  overflow: hidden;
+  background: #073324;
+}
+
+.mentoria-capa img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1080 / 300;
+  object-fit: cover;
+}
+
+
+/* =====================================================
+   OUTROS PRODUTOS
+===================================================== */
+
+.produtos-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 35px;
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.produto-card {
+  width: min(100%, 500px);
+  min-height: 560px;
+  background: #F8FBFF;
+  padding: 0 40px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =====================================================
+   CAPAS — PLANEJAMENTO E EBOOK
+   Imagens originais: 800 x 1000
+===================================================== */
+
+.produto-card-image {
+  width: calc(100% + 80px);
+  margin: 0 -40px 35px;
+  overflow: hidden;
+  background: #F8FBFF;
+}
+
+.produto-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 800 / 1000;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.produto-card:hover .produto-card-image img {
+  transform: scale(1.03);
+}
+
+
+/* =====================================================
+   CONTEÚDO DOS CARDS
+===================================================== */
+
+.produto-card-number {
+  color: #073324;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.produto-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.produto-card-content > span {
+  display: block;
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 1.7px;
+  margin-bottom: 12px;
+}
+
+.produto-card h3 {
+  font-size: 32px;
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0 0 25px;
+}
+
+.produto-card-content > p {
+  color: #073324;
+  line-height: 1.7;
+  max-width: 500px;
+  margin: 0;
+}
+
+.produto-card ul {
+  padding: 0;
+  margin: 30px 0 0;
+  list-style: none;
+}
+
+.produto-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid #155B43;
+  font-size: 14px;
+  color: #073324;
+}
+
+.produto-card-footer {
+  margin-top: auto;
+  padding-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.produto-card-footer > div {
+  display: none;
+}
+
+.produto-card-footer a {
+  display: inline-block;
+  color: #650303;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   MENTORIA
+===================================================== */
+
+.mentoria-produto-card {
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .produtos-grid {
+    gap: 25px;
+  }
+
+  .produto-card {
+    padding: 0 30px 35px;
+  }
+
+  .produto-card-image {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .produtos-grid {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .produto-card {
+    width: 100%;
+    max-width: 520px;
+    min-height: 500px;
+    padding: 0 30px 35px;
+  }
+
+  /* Capas verticais */
+  .produto-card-image {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 30px;
+  }
+
+  .produto-card-image img {
+    aspect-ratio: 800 / 1000;
+    object-fit: cover;
+  }
+
+  .produto-card h3 {
+    font-size: 30px;
+  }
+
+  /* Banner da mentoria */
+  .mentoria-capa {
+    width: calc(100% + 70px);
+    margin: -35px -35px 40px;
+  }
+
+  .mentoria-capa img {
+    aspect-ratio: 1080 / 300;
+    object-fit: cover;
+  }
+
 }
