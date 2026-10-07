@@ -2003,14 +2003,13 @@ picture {
 
 @media (max-width: 768px) {
   .mentoria-banner {
-    height: 300px;
-    width: 700px;
+    height: 400px;
   }
 
   .mentoria-banner-image {
     object-position: center center;
   }
-
+  
 .mentoria-banner-gradient {
     background: linear-gradient(
       to bottom,
