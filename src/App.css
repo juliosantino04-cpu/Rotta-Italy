@@ -1997,19 +1997,27 @@ picture {
     transparent 100%
   );
 }
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
   .mentoria-banner {
-    height: 280px;
+    height: 400px;
   }
 
   .mentoria-banner-image {
     object-position: center center;
   }
-
-  .mentoria-banner-gradient {
-    height: 160px;
+.mentoria-banner-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.5)
+    );
   }
 }
+
 .mentoria-cards {
   width: 100%;
   padding: 0 18px;
@@ -2487,41 +2495,229 @@ background: #FFFDF8
   }
 
 }
-@media (max-width: 600px) {
+/* =====================================================
+   MENTORIA — NOSSO MÉTODO
+===================================================== */
+
+.mentoria-method {
+  width: 100%;
+  padding: 120px 0;
+  background: #FFFDF8;
+}
+
+.mentoria-method h2 {
+  width: min(1180px, 90%);
+  margin: 0 auto 65px;
+
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -2px;
+
+  color: #123B5D;
+}
+
+
+/* GRID DOS PASSOS */
+
+.mentoria-steps {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid #0A2A45;
+}
+
+
+/* CADA PASSO */
+
+.mentoria-steps article {
+  position: relative;
+
+  min-height: 300px;
+  padding: 35px 30px 30px;
+
+  border-right: 1px solid #0A2A45;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.mentoria-steps article:first-child {
+  border-left: 1px solid #0A2A45;
+}
+
+
+/* NÚMERO */
+
+.mentoria-steps article > span {
+  display: block;
+
+  margin-bottom: 65px;
+
+  color: #650303;
+
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+
+/* TÍTULO */
+
+.mentoria-steps article h3 {
+  margin: 0 0 20px;
+
+  color: #123B5D;
+
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+
+/* TEXTO */
+
+.mentoria-steps article p {
+  margin: 0;
+
+  max-width: 240px;
+
+  color: #0A2A45;
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+/* LINHA DOURADA AO PASSAR O MOUSE */
+
+.mentoria-steps article::before {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  left: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #650303;
+
+  transition: width 0.4s ease;
+}
+
+.mentoria-steps article:hover::before {
+  width: 100%;
+}
+
+.mentoria-steps article:hover {
+  background: #eeece6;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
 
   .mentoria-method {
-    padding: 75px 20px;
-  }
-
-  .mentoria-method h2 {
-    margin-bottom: 45px;
-    font-size: 38px;
-    line-height: 1.05;
+    padding: 90px 0;
   }
 
   .mentoria-steps {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .mentoria-steps article {
-    padding: 26px 22px;
+    min-height: 280px;
   }
 
-  .mentoria-steps article span {
-    margin-bottom: 20px;
+  .mentoria-steps article:nth-child(3) {
+    border-left: 1px solid #d8d4ca;
+    border-top: 1px solid #d8d4ca;
+  }
+
+  .mentoria-steps article:nth-child(4) {
+    border-top: 1px solid #d8d4ca;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .mentoria-method {
+    padding: 75px 0;
+  }
+
+  .mentoria-method h2 {
+    width: 88%;
+    margin-bottom: 45px;
+
+    font-size: 42px;
+    letter-spacing: -1.5px;
+  }
+
+  .mentoria-steps {
+    width: 88%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid #d8d4ca;
+  }
+
+  .mentoria-steps article {
+    min-height: auto;
+
+    padding: 30px 5px 35px 0;
+
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #d8d4ca;
+    border-top: none !important;
+  }
+
+  .mentoria-steps article:first-child {
+    border-left: none;
+  }
+
+  .mentoria-steps article > span {
+    margin-bottom: 35px;
+
     font-size: 12px;
+    letter-spacing: 2px;
   }
 
   .mentoria-steps article h3 {
-    font-size: 23px;
-    line-height: 1.1;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+
+    font-size: 22px;
   }
 
   .mentoria-steps article p {
-    font-size: 13px;
-    line-height: 1.65;
+    max-width: 100%;
+
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* Evita hover estranho no celular */
+  .mentoria-steps article:hover {
+    background: transparent;
   }
 
 }
@@ -4259,65 +4455,6 @@ a {
     100% {
       transform: translateY(0);
     }
-  }
-}
-/* =========================================
-   BANNER MENTORIA MOBILE
-========================================= */
-@media (max-width: 600px) {
-  .mentoria-banner {
-    height: 300px;
-  }
-
-  .mentoria-banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .mentoria-banner-gradient {
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.05),
-      rgba(0, 0, 0, 0.5)
-    );
-  }
-}
-/* =========================================
-   METODO ROTTA MENTORIA MOBILE
-========================================= */
-@media (max-width: 600px) {
-  .mentoria-method {
-    padding: 50px 20px;
-  }
-
-  .mentoria-method h2 {
-    margin-bottom: 35px;
-    font-size: 28px;
-  }
-
-  .mentoria-steps {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .mentoria-steps article {
-    width: 100%;
-  }
-
-  .mentoria-steps span {
-    margin-bottom: 10px;
-  }
-
-  .mentoria-steps h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
-  }
-
-  .mentoria-steps p {
-    font-size: 15px;
-    line-height: 1.6;
   }
 }
 /* =========================================================
