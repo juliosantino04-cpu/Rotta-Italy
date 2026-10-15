@@ -334,7 +334,7 @@ function Mentoria() {
     </a>
 
     <a
-        href="https://www.tiktok.com/@rotta.italy?_r=1&_t=ZS-99Jwu2Ax2Ie"
+        href="https://www.tiktok.com/@rottaitaly_?is_from_webapp=1&sender_device=pc"
         target="_blank"
         rel="noopener noreferrer"
       >
