@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import heroBlog from "../assets/heroblog.png";
 import capaArtigo1 from "../assets/capaartigo1.png";
+import capaArtigo2 from "../assets/capaartigo2.png";
 
 const articles = [
   {
@@ -10,6 +11,12 @@ const articles = [
     image: capaArtigo1,
     link: "https://rottaitaly.blogspot.com/2026/10/medicina-na-italia-para-brasileiros.html",
   },
+   {
+    category: "ROTTA ITALY",
+    title: "Conheça a Rotta italy",
+    image: capaArtigo2,
+    link: "https://rottaitaly.blogspot.com/2026/10/rotta-italy-conheca-rotta-italy-seu.html",
+  }
 ];
 
 export default function Blog() {
