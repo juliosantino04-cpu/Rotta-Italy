@@ -3,6 +3,8 @@ import "../App.css";
 import heroBlog from "../assets/heroblog.png";
 import capaArtigo1 from "../assets/capaartigo1.png";
 import capaArtigo2 from "../assets/capaartigo2.png";
+import capaArtigo3 from "../assets/capaartigo3.png";
+
 
 const articles = [
   {
@@ -16,7 +18,13 @@ const articles = [
     title: "Conheça a Rotta italy",
     image: capaArtigo2,
     link: "https://rottaitaly.blogspot.com/2026/10/rotta-italy-conheca-rotta-italy-seu.html",
-  }
+  },
+  {
+    category: "Testes e Provas",
+    title: "Testes de proficiência",
+    image: capaArtigo3,
+    link: "https://rottaitaly.blogspot.com/2026/10/testes-de-proficiencia-para-estudar-na.html",
+   }
 ];
 
 export default function Blog() {
