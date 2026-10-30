@@ -26,7 +26,7 @@ function Header() {
       <div className="header-buttons">
 
         <NavLink
-          to="/mentoria"
+          to="/produtos"
           className="options-button"
         >
           Conhecer opções
