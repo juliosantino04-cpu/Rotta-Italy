@@ -342,7 +342,7 @@ function Mentoria() {
       </a>
 
     <a
-        href="https://youtube.com/@juliosantinoo?si=EZEBXt1cd8h2I-lC"
+        href="https://youtube.com/@rottaitaly?si=EZEBXt1cd8h2I-lC"
         target="_blank"
         rel="noopener noreferrer"
       >
